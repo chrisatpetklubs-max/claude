@@ -28,7 +28,7 @@
     --page-height: 210mm;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   html, body { background: #d4d2cd; }
   body {
     font-family: 'Inter', sans-serif;
@@ -39,7 +39,7 @@
     gap: 0;
     color: var(--soft-black);
   }
-
+ 
   /* ====== PAGE BASE (A5) ====== */
   .page {
     width: var(--page-width);
@@ -61,7 +61,7 @@
     body { padding: 0; background: var(--paper); }
     .page { width: 100vw; min-height: auto; box-shadow: none; margin: 0; }
   }
-
+ 
   /* ====== PAGE NUMBER ====== */
   .page-number {
     position: absolute;
@@ -74,7 +74,7 @@
     font-family: 'Inter', sans-serif;
   }
   .page-number.left { right: auto; left: 22px; }
-
+ 
   /* ====== INNER PAGE HEADER (used on chapter pages) ====== */
   .page-header {
     background: var(--black);
@@ -92,7 +92,7 @@
     text-transform: uppercase;
   }
   .page-header-icon { color: var(--accent); font-size: 14px; }
-
+ 
   /* ====== CONTENT BASE (for future chapter pages) ====== */
   .content-body { padding: 28px 24px 56px; }
   .section-eyebrow {
@@ -123,7 +123,7 @@
     color: var(--soft-black);
     margin-bottom: 18px;
   }
-
+ 
   /* ============================================================
      TABLE OF CONTENTS
      ============================================================ */
@@ -161,7 +161,7 @@
     height: 1px;
     background: var(--border);
   }
-
+ 
   /* Front-matter rows */
   .toc-row {
     display: flex;
@@ -201,7 +201,7 @@
     min-width: 32px;
     text-align: center;
   }
-
+ 
   /* Chapter blocks */
   .toc-chapter { margin-bottom: 14px; }
   .toc-chapter-main {
@@ -267,7 +267,7 @@
     font-size: 10px;
   }
   .toc-sub-name { flex: 1; }
-
+ 
   /* ============================================================
      ARCHETYPE ROW (About This Book)
      ============================================================ */
@@ -296,7 +296,7 @@
     font-weight: 700;
     color: var(--black);
   }
-
+ 
   /* ============================================================
      EMPHASIS LINES (e.g., "Not through... / But through...")
      ============================================================ */
@@ -321,7 +321,7 @@
     border-left: 3px solid var(--healing);
     font-weight: 600;
   }
-
+ 
   /* ============================================================
      CONTRAST PAIR (What You'll Find: "Not / It is")
      ============================================================ */
@@ -353,7 +353,7 @@
   }
   .contrast-row.no .contrast-row-text strong { color: var(--warm-red); }
   .contrast-row.yes .contrast-row-text strong { color: var(--healing); }
-
+ 
   /* ============================================================
      VALUE ROW (Inside, you'll find...)
      ============================================================ */
@@ -383,7 +383,7 @@
     line-height: 1.5;
     color: var(--soft-black);
   }
-
+ 
   /* ============================================================
      DISCLAIMER NOTE
      ============================================================ */
@@ -409,7 +409,7 @@
     line-height: 1.55;
     color: #5a4318;
   }
-
+ 
   /* ============================================================
      FEELING ROW (How to Use: "Some parts will feel...")
      ============================================================ */
@@ -430,7 +430,7 @@
     line-height: 1.55;
     color: var(--soft-black);
   }
-
+ 
   /* ============================================================
      STEP ROW (numbered guidance)
      ============================================================ */
@@ -461,7 +461,7 @@
     color: var(--soft-black);
     padding-top: 6px;
   }
-
+ 
   /* ============================================================
      CLOSING HIGHLIGHT (dark callout)
      ============================================================ */
@@ -496,7 +496,7 @@
     line-height: 1.65;
     color: #f0e5cd;
   }
-
+ 
   /* ============================================================
      COVER PAGE
      ============================================================ */
@@ -510,7 +510,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   /* Decorative concentric "broken cycle" rings */
   .cover-rings {
     position: absolute;
@@ -522,7 +522,7 @@
     opacity: 0.55;
   }
   .cover-rings svg { width: 100%; height: 100%; }
-
+ 
   .cover-rings-bottom {
     position: absolute;
     bottom: -60px;
@@ -532,14 +532,14 @@
     pointer-events: none;
     opacity: 0.35;
   }
-
+ 
   .cover-top-bar {
     background: linear-gradient(90deg, var(--accent-deep), var(--accent), var(--accent-light), var(--accent));
     height: 6px;
     width: 100%;
     z-index: 2;
   }
-
+ 
   .cover-inner {
     flex: 1;
     display: flex;
@@ -549,7 +549,7 @@
     position: relative;
     z-index: 2;
   }
-
+ 
   .cover-label {
     font-family: 'Inter', sans-serif;
     font-size: 10px;
@@ -567,7 +567,7 @@
     border-radius: 50%;
     display: inline-block;
   }
-
+ 
   .cover-title-block {
     flex: 1;
     display: flex;
@@ -575,7 +575,7 @@
     justify-content: center;
     margin: 20px 0;
   }
-
+ 
   .cover-eyebrow {
     font-family: 'Inter', sans-serif;
     font-size: 11px;
@@ -585,7 +585,7 @@
     text-transform: uppercase;
     margin-bottom: 14px;
   }
-
+ 
   .cover-title {
     font-family: 'Playfair Display', serif;
     font-size: 46px;
@@ -600,7 +600,7 @@
     font-style: italic;
     font-weight: 700;
   }
-
+ 
   .cover-divider {
     width: 70px;
     height: 3px;
@@ -608,7 +608,7 @@
     margin: 22px 0 18px;
     border-radius: 2px;
   }
-
+ 
   .cover-subtitle {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -618,7 +618,7 @@
     max-width: 280px;
     letter-spacing: 0.2px;
   }
-
+ 
   .cover-promise {
     margin-top: 28px;
     padding: 16px 18px;
@@ -641,7 +641,7 @@
     color: var(--accent-light);
     line-height: 1.65;
   }
-
+ 
   .cover-tags {
     display: flex;
     gap: 8px;
@@ -659,7 +659,7 @@
     font-weight: 500;
     text-transform: uppercase;
   }
-
+ 
   .cover-bottom {
     border-top: 1px solid rgba(255,255,255,0.12);
     padding-top: 20px;
@@ -694,13 +694,13 @@
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(200,169,110,0.4);
   }
-
+ 
   .cover-bottom-bar {
     background: linear-gradient(90deg, var(--accent), var(--accent-deep), var(--accent), var(--accent-light));
     height: 6px;
     width: 100%;
   }
-
+ 
   /* ============================================================
      CHAPTER COVER PAGE
      ============================================================ */
@@ -810,7 +810,7 @@
     font-weight: 800;
     flex-shrink: 0;
   }
-
+ 
   /* ============================================================
      SUB-SECTION HEADER (1.1, 1.1.1, etc.)
      ============================================================ */
@@ -839,7 +839,7 @@
     border-radius: 2px;
     margin-bottom: 18px;
   }
-
+ 
   /* ============================================================
      ARCHETYPE PROFILE CARD
      ============================================================ */
@@ -896,7 +896,7 @@
     font-style: italic;
     line-height: 1.45;
   }
-
+ 
   /* ============================================================
      BELIEF / CORE INSIGHT CALLOUT
      ============================================================ */
@@ -926,7 +926,7 @@
     line-height: 1.55;
     font-weight: 600;
   }
-
+ 
   /* ============================================================
      INNER VOICE QUOTES
      ============================================================ */
@@ -957,7 +957,7 @@
     margin-bottom: 4px;
   }
   .inner-voice-line:last-child { margin-bottom: 0; }
-
+ 
   /* ============================================================
      RESEARCH NOTE
      ============================================================ */
@@ -984,7 +984,7 @@
     line-height: 1.65;
     color: var(--soft-black);
   }
-
+ 
   /* ============================================================
      REFLECTION PROMPT
      ============================================================ */
@@ -1028,7 +1028,7 @@
     position: relative;
     z-index: 2;
   }
-
+ 
   /* ============================================================
      TRANSFORMATION ROW (Then → Now)
      ============================================================ */
@@ -1082,7 +1082,7 @@
     flex-shrink: 0;
     margin-top: 3px;
   }
-
+ 
   /* ============================================================
      SURVIVAL LOGIC (If X, Then Y)
      ============================================================ */
@@ -1132,7 +1132,7 @@
     flex-shrink: 0;
     margin-top: 2px;
   }
-
+ 
   /* ============================================================
      PULL QUOTE (mid-content emphasis)
      ============================================================ */
@@ -1162,7 +1162,7 @@
     font-style: normal;
     line-height: 1;
   }
-
+ 
   /* ============================================================
      COMPARISON ROW (this vs that)
      ============================================================ */
@@ -1196,7 +1196,7 @@
   }
   .comparison-row.surface .comparison-row-text { color: var(--soft-black); }
   .comparison-row.deeper .comparison-row-text { color: #e5e0d4; font-weight: 500; }
-
+ 
   /* ============================================================
      SCENARIO ITEM
      ============================================================ */
@@ -1227,7 +1227,7 @@
     line-height: 1.55;
     color: var(--soft-black);
   }
-
+ 
   /* ============================================================
      EMPHASIS LINE (sentence-level highlight)
      ============================================================ */
@@ -1244,7 +1244,7 @@
     border-radius: 0 8px 8px 0;
     margin: 16px 0;
   }
-
+ 
   /* CHAPTER END MARK */
   .chapter-end-mark {
     text-align: center;
@@ -1253,10 +1253,164 @@
     font-size: 18px;
     letter-spacing: 8px;
   }
+ 
+  /* ============================================================
+     FLOW DIAGRAM (vertical sequence)
+     ============================================================ */
+  .flow-diagram {
+    margin: 18px 0;
+    padding: 16px 14px;
+    background: var(--cream);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .flow-step {
+    background: var(--paper);
+    border: 1.5px solid var(--accent);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--soft-black);
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+  }
+  .flow-step.dark {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--accent);
+  }
+  .flow-step.gold {
+    background: var(--accent);
+    color: var(--black);
+    border-color: var(--accent-deep);
+  }
+  .flow-arrow {
+    text-align: center;
+    color: var(--accent);
+    font-size: 18px;
+    padding: 4px 0;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .flow-step-note {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+ 
+  /* ============================================================
+     TOOL / EXERCISE BOX
+     ============================================================ */
+  .tool-box {
+    background: linear-gradient(135deg, #fef9f0, #faf3e3);
+    border: 1.5px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 18px 16px;
+    margin: 20px 0;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(200,169,110,0.15);
+  }
+  .tool-box-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    border-bottom: 1px dashed var(--accent);
+  }
+  .tool-box-icon {
+    font-size: 22px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .tool-box-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--accent-deep);
+    line-height: 1.25;
+    flex: 1;
+  }
+  .tool-box-intro {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--soft-black);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .tool-box-step {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .tool-box-step:last-child { margin-bottom: 0; }
+  .tool-box-step-num {
+    width: 26px; height: 26px;
+    background: var(--accent);
+    color: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .tool-box-step-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--soft-black);
+  }
+  .tool-box-step-text strong {
+    font-weight: 700;
+    color: var(--black);
+    display: block;
+    margin-bottom: 2px;
+  }
+ 
+  /* ============================================================
+     DEFINITION CONTRAST (e.g. regular vs toxic shame)
+     ============================================================ */
+  .definition-stack { margin: 16px 0; }
+  .definition-row {
+    background: #f4f1ec;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--muted);
+  }
+  .definition-row.severe {
+    background: var(--black);
+    color: var(--white);
+    border-left-color: var(--warm-red);
+  }
+  .definition-row-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: var(--muted);
+  }
+  .definition-row.severe .definition-row-label { color: var(--warm-red); opacity: 0.95; }
+  .definition-row-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--soft-black);
+  }
+  .definition-row.severe .definition-row-text { color: #f0e5cd; }
 </style>
 </head>
 <body>
-
+ 
 <!-- ==================== COVER PAGE ==================== -->
 <div class="page cover">
   <!-- decorative rings -->
@@ -1275,18 +1429,18 @@
       <circle cx="100" cy="100" r="30" fill="none" stroke="#c8a96e" stroke-width="1.5"/>
     </svg>
   </div>
-
+ 
   <div class="cover-top-bar"></div>
-
+ 
   <div class="cover-inner">
-
+ 
     <div>
       <div class="cover-label">
         <span class="dot"></span>
         Self-Discovery &nbsp;·&nbsp; Healing &nbsp;·&nbsp; Identity
       </div>
     </div>
-
+ 
     <div class="cover-title-block">
       <div class="cover-eyebrow">A Guide to Reclaiming Your True Self</div>
       <div class="cover-title">
@@ -1297,21 +1451,21 @@
       <div class="cover-subtitle">
         How to Stop Being Who Your Family Needed You to Be and Reclaim Your True Self
       </div>
-
+ 
       <div class="cover-promise">
         <div class="cover-promise-label">For the reader who is ready</div>
         <div class="cover-promise-text">
           You don't need to fix yourself. You need to find yourself — beneath every role you were handed, every expectation you carried, every version of you that was never truly yours.
         </div>
       </div>
-
+ 
       <div class="cover-tags">
         <div class="cover-tag">✦ Identity</div>
         <div class="cover-tag">✦ Family Patterns</div>
         <div class="cover-tag">✦ Inner Healing</div>
       </div>
     </div>
-
+ 
     <div class="cover-bottom">
       <div>
         <div class="cover-author-label">Written by</div>
@@ -1319,13 +1473,13 @@
       </div>
       <div class="cover-badge">First Edition</div>
     </div>
-
+ 
   </div>
-
+ 
   <div class="cover-bottom-bar"></div>
 </div>
-
-
+ 
+ 
 <!-- ==================== TABLE OF CONTENTS — PART 1 ==================== -->
 <div class="page" id="toc">
   <div class="page-header">
@@ -1336,9 +1490,9 @@
     <div class="section-eyebrow">Navigation</div>
     <div class="toc-section-title">Table of Contents</div>
     <div class="toc-tagline">Tap any section to jump straight to it.</div>
-
+ 
     <div class="toc-group-label"><i class="fas fa-bookmark" style="color:var(--accent-deep);font-size:10px;"></i> Front Matter</div>
-
+ 
     <a class="toc-row" href="#about">
       <div class="toc-row-icon"><i class="fas fa-book-open"></i></div>
       <div class="toc-row-name">About This Book</div>
@@ -1354,9 +1508,9 @@
       <div class="toc-row-name">How to Use This Book</div>
       <div class="toc-row-page">6</div>
     </a>
-
+ 
     <div class="toc-group-label"><i class="fas fa-layer-group" style="color:var(--accent-deep);font-size:10px;"></i> Chapters</div>
-
+ 
     <!-- Chapter 1 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch1">
@@ -1370,7 +1524,7 @@
         <a class="toc-sub" href="#ch1-3"><span class="toc-sub-num">1.3</span><span class="toc-sub-name">Signs You're Still Living Inside the Role</span></a>
       </div>
     </div>
-
+ 
     <!-- Chapter 2 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch2">
@@ -1384,7 +1538,7 @@
         <a class="toc-sub" href="#ch2-3"><span class="toc-sub-num">2.3</span><span class="toc-sub-name">The Adult Symptoms Nobody Connects Back to Family</span></a>
       </div>
     </div>
-
+ 
     <!-- Chapter 3 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch3">
@@ -1398,7 +1552,7 @@
         <a class="toc-sub" href="#ch3-3"><span class="toc-sub-num">3.3</span><span class="toc-sub-name">The Fear of Changing</span></a>
       </div>
     </div>
-
+ 
     <!-- Chapter 4 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch4">
@@ -1415,8 +1569,8 @@
   </div>
   <div class="page-number">2</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== TABLE OF CONTENTS — PART 2 ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1427,9 +1581,9 @@
     <div class="section-eyebrow">Navigation (cont.)</div>
     <div class="toc-section-title">Table of Contents</div>
     <div class="toc-tagline">Continued — chapters five through eight.</div>
-
+ 
     <div class="toc-group-label"><i class="fas fa-layer-group" style="color:var(--accent-deep);font-size:10px;"></i> Chapters (cont.)</div>
-
+ 
     <!-- Chapter 5 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch5">
@@ -1443,7 +1597,7 @@
         <a class="toc-sub" href="#ch5-3"><span class="toc-sub-num">5.3</span><span class="toc-sub-name">Ending the Cycle of Self-Sabotage</span></a>
       </div>
     </div>
-
+ 
     <!-- Chapter 6 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch6">
@@ -1457,7 +1611,7 @@
         <a class="toc-sub" href="#ch6-3"><span class="toc-sub-num">6.3</span><span class="toc-sub-name">Reclaiming Emotional Space</span></a>
       </div>
     </div>
-
+ 
     <!-- Chapter 7 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch7">
@@ -1471,7 +1625,7 @@
         <a class="toc-sub" href="#ch7-3"><span class="toc-sub-num">7.3</span><span class="toc-sub-name">Becoming Someone You No Longer Need to Escape</span></a>
       </div>
     </div>
-
+ 
     <!-- Chapter 8 -->
     <div class="toc-chapter">
       <a class="toc-chapter-main" href="#ch8">
@@ -1485,7 +1639,7 @@
         <a class="toc-sub" href="#ch8-3"><span class="toc-sub-num">8.3</span><span class="toc-sub-name">A New Relationship With Yourself</span></a>
       </div>
     </div>
-
+ 
     <div style="margin-top:18px; padding:12px 14px; background:var(--black); border-radius:10px; text-align:center;">
       <div style="font-size:10px; color:var(--accent); letter-spacing:2px; text-transform:uppercase; margin-bottom:4px;">A Note on Page Numbers</div>
       <div style="font-size:12px; color:#c0c0c0; line-height:1.5;">Chapter page numbers are estimated and will be finalized once all chapter content is complete.</div>
@@ -1493,8 +1647,8 @@
   </div>
   <div class="page-number">3</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== ABOUT THIS BOOK ==================== -->
 <div class="page" id="about">
   <div class="page-header">
@@ -1505,9 +1659,9 @@
     <div class="section-eyebrow">Front Matter</div>
     <div class="section-title">About This Book <span style="font-family:'Inter';font-size:24px;">📖</span></div>
     <div class="section-divider"></div>
-
+ 
     <p class="body-text">This book is for the people who became who their family needed them to be before they ever had the chance to discover who they really were.</p>
-
+ 
     <div class="archetype-row">
       <div class="icon-circle"><i class="fas fa-shield-halved"></i></div>
       <div class="archetype-name">The strong one.</div>
@@ -1524,9 +1678,9 @@
       <div class="icon-circle"><i class="fas fa-ghost"></i></div>
       <div class="archetype-name">The invisible child.</div>
     </div>
-
+ 
     <p class="body-text" style="margin-top:18px;">If you are exhausted from carrying roles that no longer fit you, this book will help you understand where those patterns came from — and how to finally break them without guilt.</p>
-
+ 
     <div class="emphasis-stack">
       <div class="emphasis-line neg">Not through empty motivation.</div>
       <div class="emphasis-line neg">Not through blame.</div>
@@ -1535,8 +1689,8 @@
   </div>
   <div class="page-number">4</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== DISCLAIMER / WHAT YOU'LL FIND HERE ==================== -->
 <div class="page" id="whats-inside">
   <div class="page-header">
@@ -1547,7 +1701,7 @@
     <div class="section-eyebrow">Disclaimer</div>
     <div class="section-title">What You'll Find Here</div>
     <div class="section-divider"></div>
-
+ 
     <div class="contrast-row no">
       <div class="contrast-row-icon">✕</div>
       <div class="contrast-row-text">
@@ -1562,11 +1716,11 @@
         It is a book about understanding the emotional patterns that shaped you so you can stop abandoning yourself to keep other people comfortable.
       </div>
     </div>
-
+ 
     <div style="font-size:13px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:22px 0 12px; display:flex; align-items:center; gap:8px;">
       <i class="fas fa-circle-check" style="color:var(--accent);font-size:13px;"></i> Inside, you'll find:
     </div>
-
+ 
     <div class="value-list">
       <div class="value-row">
         <div class="value-row-icon"><i class="fas fa-heart-pulse"></i></div>
@@ -1593,7 +1747,7 @@
         <div class="value-row-text">healthy boundary work without emotional jargon</div>
       </div>
     </div>
-
+ 
     <div class="disclaimer-note">
       <div class="disclaimer-note-icon"><i class="fas fa-circle-info"></i></div>
       <div class="disclaimer-note-text">
@@ -1603,8 +1757,8 @@
   </div>
   <div class="page-number">5</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== HOW TO USE THIS BOOK ==================== -->
 <div class="page" id="how-to-use">
   <div class="page-header">
@@ -1615,11 +1769,11 @@
     <div class="section-eyebrow">Reader's Guide</div>
     <div class="section-title">How to Use This Book <span style="font-family:'Inter';font-size:24px;">🗺️</span></div>
     <div class="section-divider"></div>
-
+ 
     <p class="body-text" style="font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:var(--black);font-weight:600;">Do not rush through this book just to finish it.</p>
-
+ 
     <div style="font-size:11px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:14px 0 10px;">As you read, some parts will feel...</div>
-
+ 
     <div class="feeling-row">
       <div class="feeling-row-emoji">💚</div>
       <div class="feeling-row-text">Some parts will feel validating.</div>
@@ -1632,9 +1786,9 @@
       <div class="feeling-row-emoji">💡</div>
       <div class="feeling-row-text">Others may explain emotions you have carried for years but never had language for.</div>
     </div>
-
+ 
     <div style="font-size:11px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:18px 0 10px;">How to move through it</div>
-
+ 
     <div class="step-row">
       <div class="step-num">1</div>
       <div class="step-text">Take your time with the exercises and reflections.</div>
@@ -1647,7 +1801,7 @@
       <div class="step-num">3</div>
       <div class="step-text">Come back to sections more than once if needed.</div>
     </div>
-
+ 
     <div class="closing-highlight">
       <div class="closing-highlight-label"><i class="fas fa-feather"></i> &nbsp; Remember</div>
       <div class="closing-highlight-text">This is not about becoming a completely different person overnight. It is about slowly returning to the person you were before survival became your identity.</div>
@@ -1655,8 +1809,8 @@
   </div>
   <div class="page-number">6</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== CHAPTER 1 — COVER PAGE ==================== -->
 <div class="page chapter-cover" id="ch1">
   <div class="chapter-cover-bg-rings" aria-hidden="true">
@@ -1684,8 +1838,8 @@
   </div>
   <div class="page-number" style="color:rgba(255,255,255,0.45);">7</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== CHAPTER 1 — INTRO (PART 1) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1702,8 +1856,8 @@
   </div>
   <div class="page-number">8</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== CHAPTER 1 — INTRO (PART 2) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1722,8 +1876,8 @@
   </div>
   <div class="page-number">9</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1 — SECTION OPENER (PART 1) ==================== -->
 <div class="page" id="ch1-1">
   <div class="page-header">
@@ -1734,7 +1888,7 @@
     <div class="subsection-num">SECTION 1.1</div>
     <div class="subsection-title">Families Don't Just Raise Children — They Assign Roles</div>
     <div class="subsection-divider"></div>
-
+ 
     <p class="body-text">A family is more than a group of people living together. It is an emotional system. In healthy families, that system has flexibility. Children are allowed to grow into themselves naturally. They can be upset without becoming a burden. They can make mistakes without carrying shame for years. They can express emotions without feeling responsible for everyone else's reaction.</p>
     <p class="body-text">But in emotionally unhealthy environments, something different happens.</p>
     <p class="body-text">The family slowly begins organizing itself around survival instead of connection.</p>
@@ -1743,8 +1897,8 @@
   </div>
   <div class="page-number">10</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1 — SECTION OPENER (PART 2) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1753,25 +1907,25 @@
   </div>
   <div class="content-body">
     <p class="body-text">Nobody sits children down and assigns these roles directly. The child simply learns, through repetition, who they need to become in order to feel safe, accepted, or emotionally connected.</p>
-
+ 
     <div class="pull-quote">
       <span class="pull-quote-mark">"</span>
       Over time, the role stops feeling like a strategy.<br>It starts feeling like a personality.
     </div>
-
+ 
     <div class="research-note">
       <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
       <div class="research-note-text">Research in family systems theory has long shown that families naturally try to maintain emotional balance, even when the patterns inside the home are unhealthy. Children are especially sensitive to this. They absorb tension quickly and adapt themselves around it.</div>
     </div>
-
+ 
     <p class="body-text">That adaptation is intelligent.</p>
     <p class="body-text">But it can also become deeply limiting later in life.</p>
     <p class="body-text">Because many adults are still living inside roles they created as children. Not because those roles still serve them. Because the nervous system learned them early and repeated them often.</p>
   </div>
   <div class="page-number">11</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.1 — THE STRONG ONE (PART 1) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1781,7 +1935,7 @@
   <div class="content-body">
     <div class="subsection-num">1.1.1</div>
     <div class="subsection-title">The Strong One</div>
-
+ 
     <div class="profile-card">
       <div class="profile-card-icon"><i class="fas fa-shield-halved"></i></div>
       <div class="profile-card-text">
@@ -1790,7 +1944,7 @@
         <div class="profile-card-tagline">"the child people admire"</div>
       </div>
     </div>
-
+ 
     <p class="body-text">The strong one is usually the child people admire.</p>
     <p class="body-text">They are dependable, mature, emotionally controlled, and capable under pressure. While everyone else is overwhelmed, they stay functional. While others fall apart, they hold everything together.</p>
     <p class="body-text">From the outside, this role looks powerful.</p>
@@ -1800,8 +1954,8 @@
   </div>
   <div class="page-number">12</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.1 — THE STRONG ONE (PART 2) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1814,19 +1968,19 @@
     <p class="body-text">And because families naturally lean on whoever seems most capable, the child who appears "strong" often ends up carrying more and more.</p>
     <p class="body-text">At first, this can even feel rewarding. People praise them for being mature. Reliable. Selfless. Easy to depend on.</p>
     <p class="body-text">But beneath that praise, many strong ones quietly develop a painful belief:</p>
-
+ 
     <div class="belief-callout">
       <div class="belief-callout-label"><i class="fas fa-quote-left"></i> The Hidden Belief</div>
       <div class="belief-callout-text">My value comes from what I can carry for other people.</div>
     </div>
-
+ 
     <p class="body-text">That belief follows them into adulthood.</p>
     <p class="body-text">They become the friend everyone calls during a crisis but rarely checks on afterward. The partner who over-functions in relationships. The employee who cannot rest without guilt. The person who feels uncomfortable receiving help because they were trained to survive by being useful.</p>
   </div>
   <div class="page-number">13</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.1 — THE STRONG ONE (PART 3) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1838,15 +1992,15 @@
       <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
       <div class="research-note-text">Research on parentification, the process where children take on emotional or practical adult responsibilities too early has shown long-term links to anxiety, hyper-independence, emotional burnout, and chronic over-responsibility in adulthood.</div>
     </div>
-
+ 
     <p class="body-text">Many strong ones spend years believing their exhaustion is weakness.</p>
-
+ 
     <div class="emphasis-strong">In reality, they are simply carrying a role that was never meant to last forever.</div>
   </div>
   <div class="page-number">14</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.2 — THE SCAPEGOAT (PART 1) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1856,7 +2010,7 @@
   <div class="content-body">
     <div class="subsection-num">1.1.2</div>
     <div class="subsection-title">The Scapegoat</div>
-
+ 
     <div class="profile-card">
       <div class="profile-card-icon"><i class="fas fa-bullseye"></i></div>
       <div class="profile-card-text">
@@ -1865,7 +2019,7 @@
         <div class="profile-card-tagline">"the emotional container for the family's frustration"</div>
       </div>
     </div>
-
+ 
     <p class="body-text">Every unhealthy system needs somewhere for the tension to go.</p>
     <p class="body-text">In some families, that tension quietly gets placed onto one person.</p>
     <p class="body-text">The scapegoat is often the child who gets blamed for problems that were already present long before them. Sometimes they are more emotionally expressive than the rest of the family. Sometimes they speak uncomfortable truths. Sometimes they are simply different in a way the system does not know how to tolerate.</p>
@@ -1874,8 +2028,8 @@
   </div>
   <div class="page-number">15</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.2 — THE SCAPEGOAT (PART 2) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1884,30 +2038,30 @@
   </div>
   <div class="content-body">
     <p class="body-text">And eventually, they begin questioning themselves constantly.</p>
-
+ 
     <div class="inner-voice">
       <div class="inner-voice-label"><i class="fas fa-brain"></i> The Internal Voice</div>
       <div class="inner-voice-line">Maybe I really am too sensitive.</div>
       <div class="inner-voice-line">Maybe I am difficult.</div>
       <div class="inner-voice-line">Maybe everything would be easier if I were different.</div>
     </div>
-
+ 
     <p class="body-text">That kind of conditioning runs deep.</p>
     <p class="body-text">Many scapegoats grow into adults who feel defensive before anything has even happened. They over-explain themselves. They apologize too quickly. They expect rejection before connection. Even in healthy relationships, part of them is waiting to become the problem again.</p>
-
+ 
     <div class="research-note">
       <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
       <div class="research-note-text">Research on emotional invalidation and family scapegoating has shown that repeated blame exposure in childhood can strongly affect self-worth, emotional regulation, and identity development later in life.</div>
     </div>
-
+ 
     <p class="body-text">One of the hardest things for scapegoats to understand is that being blamed repeatedly does not automatically mean you were the problem.</p>
-
+ 
     <div class="emphasis-strong">Sometimes dysfunctional systems protect themselves by choosing a target instead of facing the truth.</div>
   </div>
   <div class="page-number">16</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.3 — THE PEACEKEEPER (PART 1) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1917,7 +2071,7 @@
   <div class="content-body">
     <div class="subsection-num">1.1.3</div>
     <div class="subsection-title">The Peacekeeper</div>
-
+ 
     <div class="profile-card">
       <div class="profile-card-icon"><i class="fas fa-dove"></i></div>
       <div class="profile-card-text">
@@ -1926,7 +2080,7 @@
         <div class="profile-card-tagline">"they learned how to read a room"</div>
       </div>
     </div>
-
+ 
     <p class="body-text">The peacekeeper learns very early how to read a room.</p>
     <p class="body-text">They notice tone changes, tension shifts, facial expressions, silence, irritation, emotional distance. They become deeply sensitive to the moods of other people because conflict inside the home feels emotionally unsafe.</p>
     <p class="body-text">So they adapt by keeping the peace.</p>
@@ -1937,8 +2091,8 @@
   </div>
   <div class="page-number">17</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.3 — THE PEACEKEEPER (PART 2) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1948,18 +2102,18 @@
   <div class="content-body">
     <p class="body-text">As adults, they struggle with confrontation. Even small disagreements can trigger intense anxiety. They say yes when they want to say no. They apologize for things that are not theirs to carry. They abandon their own needs to avoid upsetting people around them.</p>
     <p class="body-text">And after years of this, many peacekeepers lose touch with what they genuinely feel because they have spent so much time monitoring everyone else.</p>
-
+ 
     <div class="research-note">
       <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
       <div class="research-note-text">Research on conflict-avoidant behavior and people-pleasing patterns has repeatedly shown connections between emotionally unpredictable childhood environments and chronic self-silencing in adulthood.</div>
     </div>
-
+ 
     <div class="emphasis-strong">The peacekeeper often becomes so focused on maintaining harmony around them that they stop noticing the growing tension inside themselves.</div>
   </div>
   <div class="page-number">18</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.4 — THE INVISIBLE CHILD (PART 1) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -1969,7 +2123,7 @@
   <div class="content-body">
     <div class="subsection-num">1.1.4</div>
     <div class="subsection-title">The Invisible Child</div>
-
+ 
     <div class="profile-card">
       <div class="profile-card-icon"><i class="fas fa-ghost"></i></div>
       <div class="profile-card-text">
@@ -1978,7 +2132,7 @@
         <div class="profile-card-tagline">"they survive by becoming emotionally invisible"</div>
       </div>
     </div>
-
+ 
     <p class="body-text">Some children survive by becoming emotionally invisible.</p>
     <p class="body-text">They stay quiet. Independent. Low-maintenance. They learn not to ask for much because somewhere along the way, they sensed there was no emotional space for their needs.</p>
     <p class="body-text">This often happens in homes where attention is consumed by conflict, addiction, mental illness, instability, or another family member's overwhelming needs.</p>
@@ -1987,8 +2141,8 @@
   </div>
   <div class="page-number">19</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.1.4 — THE INVISIBLE CHILD (PART 2) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2000,20 +2154,20 @@
     <p class="body-text">Children do not stop needing connection simply because they stop asking for it.</p>
     <p class="body-text">And many invisible children grow into adults who struggle deeply with self-worth because they spent years learning how not to take up space.</p>
     <p class="body-text">They may have difficulty expressing preferences, asking for help, speaking up in relationships, or believing their presence matters.</p>
-
+ 
     <div class="research-note">
       <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
       <div class="research-note-text">Research on childhood emotional neglect has consistently shown that the absence of emotional attunement can deeply affect identity, emotional awareness, and relationship patterns later in life.</div>
     </div>
-
+ 
     <p class="body-text">Many invisible children become adults who feel unseen even in rooms full of people.</p>
-
+ 
     <div class="emphasis-strong">Because invisibility became familiar.</div>
   </div>
   <div class="page-number">20</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.2 — SECTION OPENER (PART 1) ==================== -->
 <div class="page" id="ch1-2">
   <div class="page-header">
@@ -2024,25 +2178,25 @@
     <div class="subsection-num">SECTION 1.2</div>
     <div class="subsection-title">Why You Adapted Instead of Resisted</div>
     <div class="subsection-divider"></div>
-
+ 
     <p class="body-text">When people first begin recognizing these patterns, many immediately turn against themselves.</p>
     <p class="body-text">They ask:</p>
-
+ 
     <div class="inner-voice">
       <div class="inner-voice-label"><i class="fas fa-comment-dots"></i> The Self-Blame</div>
       <div class="inner-voice-line">Why didn't I stand up for myself?</div>
       <div class="inner-voice-line">Why did I become this way?</div>
       <div class="inner-voice-line">Why did I spend so much of my life trying to please people who drained me?</div>
     </div>
-
+ 
     <p class="body-text">But healing becomes much harder when self-awareness turns into self-blame.</p>
-
+ 
     <div class="emphasis-strong">Because the truth is, your adaptation was not a weakness.<br>It was survival.</div>
   </div>
   <div class="page-number">21</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.2 — SECTION OPENER (PART 2) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2052,7 +2206,7 @@
   <div class="content-body">
     <p class="body-text">Children are biologically wired to maintain connection with caregivers. Even when the environment is unhealthy, the nervous system still prioritizes attachment because attachment equals safety.</p>
     <p class="body-text">That means children naturally adapt themselves around whatever keeps connection intact.</p>
-
+ 
     <div class="survival-stack">
       <div class="survival-row">
         <div class="survival-if"><span class="badge">IF</span><span>expressing emotion creates rejection,</span></div>
@@ -2067,14 +2221,14 @@
         <div class="survival-then"><span class="badge">THEN</span><span>the child becomes responsible for everyone.</span></div>
       </div>
     </div>
-
+ 
     <p class="body-text">The adaptation makes sense when viewed through the eyes of survival.</p>
     <p class="body-text">The problem is that many people continue living from those same patterns long after the original environment is gone.</p>
   </div>
   <div class="page-number">22</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.2.1 — SURVIVAL BECOMES IDENTITY ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2084,10 +2238,10 @@
   <div class="content-body">
     <div class="subsection-num">1.2.1</div>
     <div class="subsection-title">Survival Becomes Identity</div>
-
+ 
     <p class="body-text">At first, these behaviors are protective.</p>
     <p class="body-text">But repeated long enough, protection starts becoming a personality.</p>
-
+ 
     <div class="transformation">
       <div class="transformation-row">
         <div class="transformation-then"><span class="badge">CHILD</span><span>The child who learns not to cry</span></div>
@@ -2105,20 +2259,20 @@
         <div class="transformation-now"><span class="badge">ADULT</span><span>"mature."</span></div>
       </div>
     </div>
-
+ 
     <p class="body-text">Over time, the role fuses with identity so completely that many adults no longer recognize it as conditioning.</p>
-
+ 
     <div class="belief-callout">
       <div class="belief-callout-label"><i class="fas fa-quote-left"></i> The Quiet Thought</div>
       <div class="belief-callout-text">This is just who I am.</div>
     </div>
-
+ 
     <p class="body-text">But many traits people consider personality were originally survival responses repeated for years.</p>
   </div>
   <div class="page-number">23</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.2.1 — SURVIVAL BECOMES IDENTITY (CONT.) ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2130,15 +2284,15 @@
       <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
       <div class="research-note-text">Research in attachment theory and developmental neuroscience has shown that repeated emotional experiences during childhood shape the nervous system deeply. The brain learns what behaviors reduce danger and increase connection, then reinforces those patterns automatically over time.</div>
     </div>
-
+ 
     <p class="body-text">That is why letting go of old roles can feel frightening even when those roles are causing suffering.</p>
-
+ 
     <div class="emphasis-strong">The nervous system often mistakes familiarity for safety.</div>
   </div>
   <div class="page-number">24</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.2.2 — WHY CHILDREN BECOME WHO THE FAMILY NEEDS ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2148,7 +2302,7 @@
   <div class="content-body">
     <div class="subsection-num">1.2.2</div>
     <div class="subsection-title">Why Children Become Who the Family Needs</div>
-
+ 
     <p class="body-text">Children are incredibly sensitive to emotional environments.</p>
     <p class="body-text">They notice what causes stress. What earns approval. What creates rejection. What keeps the household stable.</p>
     <p class="body-text">And without consciously realizing it, they begin shaping themselves around those patterns.</p>
@@ -2158,13 +2312,13 @@
     <p class="body-text">Because when you are young, survival matters more than authenticity.</p>
     <p class="body-text">You became who the family needed because, at the time, it protected your connection to the people you depended on most.</p>
     <p class="body-text">Understanding this changes something important.</p>
-
+ 
     <div class="emphasis-strong">It replaces shame with compassion.</div>
   </div>
   <div class="page-number">25</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.3 — SECTION OPENER ==================== -->
 <div class="page" id="ch1-3">
   <div class="page-header">
@@ -2175,18 +2329,18 @@
     <div class="subsection-num">SECTION 1.3</div>
     <div class="subsection-title">Signs You're Still Living Inside the Role</div>
     <div class="subsection-divider"></div>
-
+ 
     <p class="body-text">The role may have started in childhood, but many people continue carrying it far into adulthood without realizing it.</p>
     <p class="body-text">Not because they want to.</p>
     <p class="body-text">Because the behavior became automatic.</p>
     <p class="body-text">And one of the clearest signs that the role is still active is this:</p>
-
+ 
     <div class="emphasis-strong">You feel emotionally responsible for things that were never truly yours to carry.</div>
   </div>
   <div class="page-number">26</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.3.1 — FEELING RESPONSIBLE FOR EVERYONE ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2196,10 +2350,10 @@
   <div class="content-body">
     <div class="subsection-num">1.3.1</div>
     <div class="subsection-title">Feeling Responsible for Everyone</div>
-
+ 
     <p class="body-text">You walk into a room and immediately sense tension.</p>
     <p class="body-text">Someone is upset, stressed, irritated, distant, overwhelmed, or emotionally shut down, and part of you instantly feels responsible for fixing it.</p>
-
+ 
     <div class="scenario-item">
       <div class="scenario-bullet"><i class="fas fa-arrow-right"></i></div>
       <div class="scenario-text">So you help before being asked.</div>
@@ -2212,22 +2366,22 @@
       <div class="scenario-bullet"><i class="fas fa-arrow-right"></i></div>
       <div class="scenario-text">You carry emotional pressure that does not belong to you.</div>
     </div>
-
+ 
     <p class="body-text">And when people around you are unhappy, you struggle to relax.</p>
     <p class="body-text">Many people trapped inside childhood roles spend so much time monitoring others emotionally that they lose connection with themselves completely.</p>
-
+ 
     <div class="reflection-prompt">
       <div class="reflection-prompt-label">A Useful Question</div>
       <div class="reflection-prompt-text">What am I truly responsible for here?</div>
     </div>
-
+ 
     <p class="body-text">Not every emotional problem around you belongs to you.</p>
     <p class="body-text">And constantly rescuing others often prevents them from carrying responsibility for themselves.</p>
   </div>
   <div class="page-number">27</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.3.2 — GUILT WHEN PRIORITIZING YOURSELF ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2237,25 +2391,25 @@
   <div class="content-body">
     <div class="subsection-num">1.3.2</div>
     <div class="subsection-title">Guilt When Prioritizing Yourself</div>
-
+ 
     <p class="body-text">For many people, guilt appears the moment they begin choosing themselves.</p>
     <p class="body-text">Saying no feels cruel. Rest feels selfish. Setting boundaries feels dangerous.</p>
     <p class="body-text">Not because these things are wrong.</p>
     <p class="body-text">Because childhood conditioning taught them that love was connected to self-sacrifice.</p>
     <p class="body-text">So even healthy choices can trigger emotional discomfort.</p>
     <p class="body-text">This is why many people abandon boundaries almost immediately after creating them. They mistake guilt for evidence that they are hurting someone.</p>
-
+ 
     <div class="belief-callout">
       <div class="belief-callout-label"><i class="fas fa-lightbulb"></i> The Reframe</div>
       <div class="belief-callout-text">But guilt is not always proof that you are doing something wrong.<br>Sometimes it is simply proof that you are doing something differently.</div>
     </div>
-
+ 
     <p class="body-text">Learning to tolerate that discomfort without immediately abandoning yourself is one of the biggest emotional shifts in healing.</p>
   </div>
   <div class="page-number">28</div>
 </div>
-
-
+ 
+ 
 <!-- ==================== 1.3.3 — CONSTANT EMOTIONAL EXHAUSTION ==================== -->
 <div class="page">
   <div class="page-header">
@@ -2265,9 +2419,9 @@
   <div class="content-body">
     <div class="subsection-num">1.3.3</div>
     <div class="subsection-title">Constant Emotional Exhaustion</div>
-
+ 
     <p class="body-text">One of the clearest signs you are still trapped inside the role is chronic emotional exhaustion.</p>
-
+ 
     <div class="comparison-stack">
       <div class="comparison-row surface">
         <div class="comparison-row-label">Not This</div>
@@ -2278,31 +2432,3144 @@
         <div class="comparison-row-text">The deeper kind that follows years of suppressing, carrying, fixing, monitoring, pleasing, explaining, over-functioning, or emotionally surviving.</div>
       </div>
     </div>
-
+ 
     <p class="body-text">Many people living inside these patterns feel exhausted even after resting because the nervous system never fully relaxes.</p>
     <p class="body-text">Part of them is always scanning for tension. Always preparing for emotional pressure. Always managing something internally.</p>
-
+ 
     <div class="research-note">
       <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
       <div class="research-note-text">Research on chronic stress and emotional suppression has shown strong links between long-term nervous system activation and fatigue, anxiety, sleep disruption, and emotional burnout.</div>
     </div>
-
+ 
     <p class="body-text">Your body keeps the score of what your mind learned to normalize.</p>
     <p class="body-text">And eventually, the exhaustion becomes impossible to ignore.</p>
-
+ 
     <div class="emphasis-strong">Because there is a difference between living your life and constantly managing emotional survival.</div>
-
+ 
     <div class="chapter-end-mark">✦ ✦ ✦</div>
   </div>
   <div class="page-number">29</div>
 </div>
-
-
+ 
+ 
 <!-- =====================================================
      CHAPTER PAGES WILL BE ADDED HERE AS YOU PASTE CONTENT
      ===================================================== -->
-
-
+ 
+ 
+<script>
+  // Smooth scroll for all internal anchor links (TOC jump links)
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+      if (href && href.length > 1) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Subtle highlight flash on landing
+          target.style.transition = 'box-shadow 0.6s ease';
+          target.style.boxShadow = '0 0 0 3px rgba(200,169,110,0.55), 0 6px 28px rgba(0,0,0,0.18)';
+          setTimeout(() => { target.style.boxShadow = ''; }, 1100);
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breaking The Cycle – Jason Chris</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  /* ====== DESIGN TOKENS ====== */
+  :root {
+    --black: #0a0a0a;
+    --soft-black: #1a1a1a;
+    --white: #ffffff;
+    --cream: #f9f6f1;
+    --paper: #fdfbf6;
+    --accent: #c8a96e;          /* warm gold — healing, premium */
+    --accent-deep: #a8884a;
+    --accent-light: #e8d5b0;
+    --healing: #4a7c59;          /* sage — growth */
+    --healing-light: #e8f4ec;
+    --warm-red: #c0392b;
+    --warm-red-light: #fdecea;
+    --muted: #6b6b6b;
+    --soft-gray: #f2f2f2;
+    --border: #e0e0e0;
+    --page-width: 148mm;
+    --page-height: 210mm;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+  html, body { background: #d4d2cd; }
+  body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 10px;
+    gap: 0;
+    color: var(--soft-black);
+  }
+ 
+  /* ====== PAGE BASE (A5) ====== */
+  .page {
+    width: var(--page-width);
+    min-height: var(--page-height);
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.18);
+    margin-bottom: 4px;
+    page-break-after: always;
+  }
+  @page { size: A5; margin: 0; }
+  @media print {
+    html, body { background: white; padding: 0; margin: 0; }
+    .page { box-shadow: none; margin: 0; page-break-after: always; }
+  }
+  @media (max-width: 600px) {
+    :root { --page-width: 100vw; --page-height: auto; }
+    body { padding: 0; background: var(--paper); }
+    .page { width: 100vw; min-height: auto; box-shadow: none; margin: 0; }
+  }
+ 
+  /* ====== PAGE NUMBER ====== */
+  .page-number {
+    position: absolute;
+    bottom: 16px;
+    right: 22px;
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-family: 'Inter', sans-serif;
+  }
+  .page-number.left { right: auto; left: 22px; }
+ 
+  /* ====== INNER PAGE HEADER (used on chapter pages) ====== */
+  .page-header {
+    background: var(--black);
+    padding: 16px 24px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page-header-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .page-header-icon { color: var(--accent); font-size: 14px; }
+ 
+  /* ====== CONTENT BASE (for future chapter pages) ====== */
+  .content-body { padding: 28px 24px 56px; }
+  .section-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--accent-deep);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--black);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .section-divider {
+    width: 48px; height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin: 14px 0 22px;
+  }
+  .body-text {
+    font-size: 16px;
+    line-height: 1.85;
+    color: var(--soft-black);
+    margin-bottom: 18px;
+  }
+ 
+  /* ============================================================
+     TABLE OF CONTENTS
+     ============================================================ */
+  .toc-body { padding: 26px 22px 50px; }
+  .toc-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--black);
+    margin-bottom: 4px;
+    line-height: 1.1;
+  }
+  .toc-tagline {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 22px;
+    line-height: 1.5;
+  }
+  .toc-group-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--accent-deep);
+    text-transform: uppercase;
+    margin: 18px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .toc-group-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+ 
+  /* Front-matter rows */
+  .toc-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    background: var(--cream);
+    border-left: 3px solid var(--accent);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .toc-row:hover { background: var(--accent-light); transform: translateX(3px); }
+  .toc-row-icon {
+    width: 30px; height: 30px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .toc-row-name {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+  }
+  .toc-row-page {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-deep);
+    background: rgba(200,169,110,0.18);
+    padding: 3px 8px;
+    border-radius: 12px;
+    min-width: 32px;
+    text-align: center;
+  }
+ 
+  /* Chapter blocks */
+  .toc-chapter { margin-bottom: 14px; }
+  .toc-chapter-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    background: var(--black);
+    border-radius: 8px 8px 0 0;
+    text-decoration: none;
+    border-left: 3px solid var(--accent);
+  }
+  .toc-chapter-main:hover { background: #1a1a1a; }
+  .toc-chapter-badge {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    background: rgba(200,169,110,0.12);
+    border: 1px solid var(--accent);
+    padding: 3px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .toc-chapter-title {
+    flex: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.25;
+  }
+  .toc-chapter-page {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .toc-subs {
+    background: var(--cream);
+    border-radius: 0 0 8px 8px;
+    padding: 6px 10px 8px;
+    border-left: 3px solid var(--accent-light);
+  }
+  .toc-sub {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    text-decoration: none;
+    font-size: 11.5px;
+    color: var(--soft-black);
+    line-height: 1.45;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .toc-sub:hover { background: rgba(200,169,110,0.15); }
+  .toc-sub-num {
+    font-weight: 800;
+    color: var(--accent-deep);
+    min-width: 26px;
+    font-size: 10px;
+  }
+  .toc-sub-name { flex: 1; }
+ 
+  /* ============================================================
+     ARCHETYPE ROW (About This Book)
+     ============================================================ */
+  .archetype-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 18px;
+    background: var(--cream);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid var(--accent);
+  }
+  .archetype-row .icon-circle {
+    width: 38px; height: 38px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .archetype-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--black);
+  }
+ 
+  /* ============================================================
+     EMPHASIS LINES (e.g., "Not through... / But through...")
+     ============================================================ */
+  .emphasis-stack { margin: 14px 0; }
+  .emphasis-line {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.55;
+    padding: 8px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 6px;
+  }
+  .emphasis-line.neg {
+    color: var(--warm-red);
+    background: var(--warm-red-light);
+    border-left: 3px solid var(--warm-red);
+    font-style: italic;
+  }
+  .emphasis-line.pos {
+    color: #1f3d2c;
+    background: var(--healing-light);
+    border-left: 3px solid var(--healing);
+    font-weight: 600;
+  }
+ 
+  /* ============================================================
+     CONTRAST PAIR (What You'll Find: "Not / It is")
+     ============================================================ */
+  .contrast-row {
+    padding: 13px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .contrast-row.no { background: var(--warm-red-light); border-left: 4px solid var(--warm-red); }
+  .contrast-row.yes { background: var(--healing-light); border-left: 4px solid var(--healing); }
+  .contrast-row-icon { font-size: 22px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+  .contrast-row-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--soft-black);
+  }
+  .contrast-row-text strong {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: inherit;
+    font-weight: 800;
+  }
+  .contrast-row.no .contrast-row-text strong { color: var(--warm-red); }
+  .contrast-row.yes .contrast-row-text strong { color: var(--healing); }
+ 
+  /* ============================================================
+     VALUE ROW (Inside, you'll find...)
+     ============================================================ */
+  .value-list { margin: 14px 0; }
+  .value-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--cream);
+    border-radius: 8px;
+    margin-bottom: 7px;
+    border-left: 3px solid var(--accent);
+  }
+  .value-row-icon {
+    width: 34px; height: 34px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .value-row-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--soft-black);
+  }
+ 
+  /* ============================================================
+     DISCLAIMER NOTE
+     ============================================================ */
+  .disclaimer-note {
+    background: #fff8e8;
+    border: 1px solid #d4b06a;
+    border-left: 4px solid #b8862a;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .disclaimer-note-icon {
+    font-size: 18px;
+    color: #b8862a;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+  .disclaimer-note-text {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #5a4318;
+  }
+ 
+  /* ============================================================
+     FEELING ROW (How to Use: "Some parts will feel...")
+     ============================================================ */
+  .feeling-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    border-left: 4px solid var(--accent);
+    background: var(--cream);
+  }
+  .feeling-row-emoji { font-size: 22px; flex-shrink: 0; }
+  .feeling-row-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--soft-black);
+  }
+ 
+  /* ============================================================
+     STEP ROW (numbered guidance)
+     ============================================================ */
+  .step-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 13px 16px;
+    background: var(--cream);
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .step-num {
+    width: 36px; height: 36px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .step-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--soft-black);
+    padding-top: 6px;
+  }
+ 
+  /* ============================================================
+     CLOSING HIGHLIGHT (dark callout)
+     ============================================================ */
+  .closing-highlight {
+    background: var(--black);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-top: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: var(--accent);
+  }
+  .closing-highlight-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .closing-highlight-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.65;
+    color: #f0e5cd;
+  }
+ 
+  /* ============================================================
+     COVER PAGE
+     ============================================================ */
+  .cover {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    min-height: var(--page-height);
+    position: relative;
+    overflow: hidden;
+  }
+ 
+  /* Decorative concentric "broken cycle" rings */
+  .cover-rings {
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 280px;
+    height: 280px;
+    pointer-events: none;
+    opacity: 0.55;
+  }
+  .cover-rings svg { width: 100%; height: 100%; }
+ 
+  .cover-rings-bottom {
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    opacity: 0.35;
+  }
+ 
+  .cover-top-bar {
+    background: linear-gradient(90deg, var(--accent-deep), var(--accent), var(--accent-light), var(--accent));
+    height: 6px;
+    width: 100%;
+    z-index: 2;
+  }
+ 
+  .cover-inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 28px 26px;
+    position: relative;
+    z-index: 2;
+  }
+ 
+  .cover-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--accent);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cover-label .dot {
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+  }
+ 
+  .cover-title-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+  }
+ 
+  .cover-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+ 
+  .cover-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.0;
+    letter-spacing: -1.5px;
+    margin-bottom: 4px;
+  }
+  .cover-title .gold {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 700;
+  }
+ 
+  .cover-divider {
+    width: 70px;
+    height: 3px;
+    background: var(--accent);
+    margin: 22px 0 18px;
+    border-radius: 2px;
+  }
+ 
+  .cover-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #d8d4cb;
+    line-height: 1.7;
+    max-width: 280px;
+    letter-spacing: 0.2px;
+  }
+ 
+  .cover-promise {
+    margin-top: 28px;
+    padding: 16px 18px;
+    background: rgba(200,169,110,0.10);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+  }
+  .cover-promise-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .cover-promise-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--accent-light);
+    line-height: 1.65;
+  }
+ 
+  .cover-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  .cover-tag {
+    background: rgba(200,169,110,0.12);
+    border: 1px solid rgba(200,169,110,0.55);
+    border-radius: 20px;
+    padding: 6px 13px;
+    font-size: 10px;
+    color: var(--accent);
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+ 
+  .cover-bottom {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 20px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .cover-author-label {
+    font-size: 9px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .cover-author-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .cover-badge {
+    background: var(--accent);
+    color: var(--black);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding: 7px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(200,169,110,0.4);
+  }
+ 
+  .cover-bottom-bar {
+    background: linear-gradient(90deg, var(--accent), var(--accent-deep), var(--accent), var(--accent-light));
+    height: 6px;
+    width: 100%;
+  }
+ 
+  /* ============================================================
+     CHAPTER COVER PAGE
+     ============================================================ */
+  .chapter-cover {
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .chapter-cover-bg-rings {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; height: 400px;
+    pointer-events: none;
+    opacity: 0.16;
+  }
+  .chapter-cover-bg-rings svg { width: 100%; height: 100%; }
+  .chapter-cover-content {
+    position: relative;
+    z-index: 2;
+    padding: 50px 28px;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .chapter-cover-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .chapter-cover-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 96px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    font-style: italic;
+    margin-bottom: 4px;
+    letter-spacing: -3px;
+  }
+  .chapter-cover-divider-x {
+    width: 90px; height: 2px;
+    background: var(--accent);
+    margin: 18px auto 22px;
+    position: relative;
+  }
+  .chapter-cover-divider-x::before,
+  .chapter-cover-divider-x::after {
+    content: '';
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+  .chapter-cover-divider-x::before { left: -12px; }
+  .chapter-cover-divider-x::after { right: -12px; }
+  .chapter-cover-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    margin-bottom: 26px;
+    padding: 0 10px;
+  }
+  .chapter-preview {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(200,169,110,0.25);
+  }
+  .chapter-preview-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .chapter-preview-list {
+    text-align: left;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .chapter-preview-row {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #d8d4cb;
+    line-height: 1.45;
+  }
+  .chapter-preview-row:last-child { margin-bottom: 0; }
+  .chapter-preview-row .num {
+    color: var(--accent);
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+ 
+  /* ============================================================
+     SUB-SECTION HEADER (1.1, 1.1.1, etc.)
+     ============================================================ */
+  .subsection-num {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    background: var(--black);
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  .subsection-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--black);
+    line-height: 1.22;
+    margin-bottom: 16px;
+  }
+  .subsection-divider {
+    width: 38px; height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-bottom: 18px;
+  }
+ 
+  /* ============================================================
+     ARCHETYPE PROFILE CARD
+     ============================================================ */
+  .profile-card {
+    background: var(--black);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 18px;
+    margin: 14px 0 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .profile-card::after {
+    content: '';
+    position: absolute;
+    top: -30px; right: -30px;
+    width: 110px; height: 110px;
+    background: rgba(200,169,110,0.07);
+    border-radius: 50%;
+  }
+  .profile-card-icon {
+    width: 54px; height: 54px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    color: var(--black);
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .profile-card-text { flex: 1; z-index: 2; }
+  .profile-card-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .profile-card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  .profile-card-tagline {
+    font-size: 12px;
+    color: var(--accent-light);
+    font-style: italic;
+    line-height: 1.45;
+  }
+ 
+  /* ============================================================
+     BELIEF / CORE INSIGHT CALLOUT
+     ============================================================ */
+  .belief-callout {
+    background: linear-gradient(135deg, rgba(200,169,110,0.14), rgba(200,169,110,0.04));
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .belief-callout-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--accent-deep);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .belief-callout-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--soft-black);
+    line-height: 1.55;
+    font-weight: 600;
+  }
+ 
+  /* ============================================================
+     INNER VOICE QUOTES
+     ============================================================ */
+  .inner-voice {
+    background: var(--cream);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+  }
+  .inner-voice-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--accent-deep);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .inner-voice-line {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--soft-black);
+    line-height: 1.6;
+    margin-bottom: 4px;
+  }
+  .inner-voice-line:last-child { margin-bottom: 0; }
+ 
+  /* ============================================================
+     RESEARCH NOTE
+     ============================================================ */
+  .research-note {
+    background: #f0eee9;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 18px 0;
+    border-top: 3px solid var(--healing);
+  }
+  .research-note-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--healing);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .research-note-text {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--soft-black);
+  }
+ 
+  /* ============================================================
+     REFLECTION PROMPT
+     ============================================================ */
+  .reflection-prompt {
+    background: var(--accent);
+    color: var(--black);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .reflection-prompt::before {
+    content: '"';
+    position: absolute;
+    top: -10px; left: 14px;
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    color: rgba(0,0,0,0.08);
+    font-weight: 900;
+  }
+  .reflection-prompt-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--black);
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+  }
+  .reflection-prompt-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.4;
+    position: relative;
+    z-index: 2;
+  }
+ 
+  /* ============================================================
+     TRANSFORMATION ROW (Then → Now)
+     ============================================================ */
+  .transformation { margin: 16px 0; }
+  .transformation-row {
+    background: var(--cream);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .transformation-then {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 6px;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .transformation-then .badge {
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    background: rgba(0,0,0,0.06);
+    padding: 3px 6px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .transformation-arrow {
+    text-align: center;
+    color: var(--accent);
+    font-size: 13px;
+    margin: 4px 0;
+  }
+  .transformation-now {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--soft-black);
+    line-height: 1.5;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .transformation-now .badge {
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--accent-deep);
+    background: rgba(200,169,110,0.18);
+    padding: 3px 6px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+ 
+  /* ============================================================
+     SURVIVAL LOGIC (If X, Then Y)
+     ============================================================ */
+  .survival-stack { margin: 16px 0; }
+  .survival-row {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .survival-if {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 6px;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .survival-if .badge {
+    content: 'IF';
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--warm-red);
+    background: var(--warm-red-light);
+    padding: 3px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .survival-then {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--soft-black);
+    line-height: 1.5;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .survival-then .badge {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--healing);
+    background: var(--healing-light);
+    padding: 3px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+ 
+  /* ============================================================
+     PULL QUOTE (mid-content emphasis)
+     ============================================================ */
+  .pull-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.45;
+    text-align: center;
+    padding: 22px 22px 20px;
+    margin: 22px 0;
+    border-top: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+    position: relative;
+  }
+  .pull-quote-mark {
+    position: absolute;
+    top: -16px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--paper);
+    padding: 0 10px;
+    font-size: 32px;
+    color: var(--accent);
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1;
+  }
+ 
+  /* ============================================================
+     COMPARISON ROW (this vs that)
+     ============================================================ */
+  .comparison-stack { margin: 16px 0; }
+  .comparison-row {
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .comparison-row.surface {
+    background: #f4f1ec;
+    border-left: 3px solid var(--muted);
+  }
+  .comparison-row.deeper {
+    background: var(--black);
+    color: var(--white);
+    border-left: 3px solid var(--accent);
+  }
+  .comparison-row-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .comparison-row.surface .comparison-row-label { color: var(--muted); }
+  .comparison-row.deeper .comparison-row-label { color: var(--accent); }
+  .comparison-row-text {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .comparison-row.surface .comparison-row-text { color: var(--soft-black); }
+  .comparison-row.deeper .comparison-row-text { color: #e5e0d4; font-weight: 500; }
+ 
+  /* ============================================================
+     SCENARIO ITEM
+     ============================================================ */
+  .scenario-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 11px 14px;
+    border-radius: 8px;
+    background: var(--cream);
+    margin-bottom: 7px;
+    border-left: 3px solid var(--accent);
+  }
+  .scenario-bullet {
+    width: 22px; height: 22px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px;
+    color: var(--black);
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-weight: 800;
+  }
+  .scenario-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--soft-black);
+  }
+ 
+  /* ============================================================
+     EMPHASIS LINE (sentence-level highlight)
+     ============================================================ */
+  .emphasis-strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--black);
+    line-height: 1.55;
+    padding: 12px 16px;
+    background: rgba(200,169,110,0.10);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+  }
+ 
+  /* CHAPTER END MARK */
+  .chapter-end-mark {
+    text-align: center;
+    margin: 24px 0 0;
+    color: var(--accent);
+    font-size: 18px;
+    letter-spacing: 8px;
+  }
+ 
+  /* ============================================================
+     FLOW DIAGRAM (vertical sequence)
+     ============================================================ */
+  .flow-diagram {
+    margin: 18px 0;
+    padding: 16px 14px;
+    background: var(--cream);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  .flow-step {
+    background: var(--paper);
+    border: 1.5px solid var(--accent);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--soft-black);
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+  }
+  .flow-step.dark {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--accent);
+  }
+  .flow-step.gold {
+    background: var(--accent);
+    color: var(--black);
+    border-color: var(--accent-deep);
+  }
+  .flow-arrow {
+    text-align: center;
+    color: var(--accent);
+    font-size: 18px;
+    padding: 4px 0;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .flow-step-note {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+ 
+  /* ============================================================
+     TOOL / EXERCISE BOX
+     ============================================================ */
+  .tool-box {
+    background: linear-gradient(135deg, #fef9f0, #faf3e3);
+    border: 1.5px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 18px 16px;
+    margin: 20px 0;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(200,169,110,0.15);
+  }
+  .tool-box-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    border-bottom: 1px dashed var(--accent);
+  }
+  .tool-box-icon {
+    font-size: 22px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .tool-box-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--accent-deep);
+    line-height: 1.25;
+    flex: 1;
+  }
+  .tool-box-intro {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--soft-black);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .tool-box-step {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .tool-box-step:last-child { margin-bottom: 0; }
+  .tool-box-step-num {
+    width: 26px; height: 26px;
+    background: var(--accent);
+    color: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .tool-box-step-text {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--soft-black);
+  }
+  .tool-box-step-text strong {
+    font-weight: 700;
+    color: var(--black);
+    display: block;
+    margin-bottom: 2px;
+  }
+ 
+  /* ============================================================
+     DEFINITION CONTRAST (e.g. regular vs toxic shame)
+     ============================================================ */
+  .definition-stack { margin: 16px 0; }
+  .definition-row {
+    background: #f4f1ec;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--muted);
+  }
+  .definition-row.severe {
+    background: var(--black);
+    color: var(--white);
+    border-left-color: var(--warm-red);
+  }
+  .definition-row-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: var(--muted);
+  }
+  .definition-row.severe .definition-row-label { color: var(--warm-red); opacity: 0.95; }
+  .definition-row-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--soft-black);
+  }
+  .definition-row.severe .definition-row-text { color: #f0e5cd; }
+</style>
+</head>
+<body>
+ 
+<!-- ==================== COVER PAGE ==================== -->
+<div class="page cover">
+  <!-- decorative rings -->
+  <div class="cover-rings" aria-hidden="true">
+    <svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="140" cy="140" r="130" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="2 6"/>
+      <circle cx="140" cy="140" r="100" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="4 8"/>
+      <circle cx="140" cy="140" r="70" fill="none" stroke="#c8a96e" stroke-width="1.5" stroke-dasharray="80 200" stroke-dashoffset="0"/>
+      <circle cx="140" cy="140" r="40" fill="none" stroke="#c8a96e" stroke-width="1.5" stroke-dasharray="50 180" stroke-dashoffset="20"/>
+    </svg>
+  </div>
+  <div class="cover-rings-bottom" aria-hidden="true">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="90" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="2 6"/>
+      <circle cx="100" cy="100" r="60" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="6 10"/>
+      <circle cx="100" cy="100" r="30" fill="none" stroke="#c8a96e" stroke-width="1.5"/>
+    </svg>
+  </div>
+ 
+  <div class="cover-top-bar"></div>
+ 
+  <div class="cover-inner">
+ 
+    <div>
+      <div class="cover-label">
+        <span class="dot"></span>
+        Self-Discovery &nbsp;·&nbsp; Healing &nbsp;·&nbsp; Identity
+      </div>
+    </div>
+ 
+    <div class="cover-title-block">
+      <div class="cover-eyebrow">A Guide to Reclaiming Your True Self</div>
+      <div class="cover-title">
+        Breaking<br>
+        <span class="gold">The Cycle</span>
+      </div>
+      <div class="cover-divider"></div>
+      <div class="cover-subtitle">
+        How to Stop Being Who Your Family Needed You to Be and Reclaim Your True Self
+      </div>
+ 
+      <div class="cover-promise">
+        <div class="cover-promise-label">For the reader who is ready</div>
+        <div class="cover-promise-text">
+          You don't need to fix yourself. You need to find yourself — beneath every role you were handed, every expectation you carried, every version of you that was never truly yours.
+        </div>
+      </div>
+ 
+      <div class="cover-tags">
+        <div class="cover-tag">✦ Identity</div>
+        <div class="cover-tag">✦ Family Patterns</div>
+        <div class="cover-tag">✦ Inner Healing</div>
+      </div>
+    </div>
+ 
+    <div class="cover-bottom">
+      <div>
+        <div class="cover-author-label">Written by</div>
+        <div class="cover-author-name">Jason Chris</div>
+      </div>
+      <div class="cover-badge">First Edition</div>
+    </div>
+ 
+  </div>
+ 
+  <div class="cover-bottom-bar"></div>
+</div>
+ 
+ 
+<!-- ==================== TABLE OF CONTENTS — PART 1 ==================== -->
+<div class="page" id="toc">
+  <div class="page-header">
+    <span class="page-header-title">Breaking The Cycle</span>
+    <i class="fas fa-list page-header-icon"></i>
+  </div>
+  <div class="toc-body">
+    <div class="section-eyebrow">Navigation</div>
+    <div class="toc-section-title">Table of Contents</div>
+    <div class="toc-tagline">Tap any section to jump straight to it.</div>
+ 
+    <div class="toc-group-label"><i class="fas fa-bookmark" style="color:var(--accent-deep);font-size:10px;"></i> Front Matter</div>
+ 
+    <a class="toc-row" href="#about">
+      <div class="toc-row-icon"><i class="fas fa-book-open"></i></div>
+      <div class="toc-row-name">About This Book</div>
+      <div class="toc-row-page">4</div>
+    </a>
+    <a class="toc-row" href="#whats-inside">
+      <div class="toc-row-icon"><i class="fas fa-map"></i></div>
+      <div class="toc-row-name">Disclaimer / What You'll Find Here</div>
+      <div class="toc-row-page">5</div>
+    </a>
+    <a class="toc-row" href="#how-to-use">
+      <div class="toc-row-icon"><i class="fas fa-compass"></i></div>
+      <div class="toc-row-name">How to Use This Book</div>
+      <div class="toc-row-page">6</div>
+    </a>
+ 
+    <div class="toc-group-label"><i class="fas fa-layer-group" style="color:var(--accent-deep);font-size:10px;"></i> Chapters</div>
+ 
+    <!-- Chapter 1 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch1">
+        <div class="toc-chapter-badge">CH 01</div>
+        <div class="toc-chapter-title">The Role You Were Forced to Become</div>
+        <div class="toc-chapter-page">7</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch1-1"><span class="toc-sub-num">1.1</span><span class="toc-sub-name">Families Don't Just Raise Children — They Assign Roles</span></a>
+        <a class="toc-sub" href="#ch1-2"><span class="toc-sub-num">1.2</span><span class="toc-sub-name">Why You Adapted Instead of Resisted</span></a>
+        <a class="toc-sub" href="#ch1-3"><span class="toc-sub-num">1.3</span><span class="toc-sub-name">Signs You're Still Living Inside the Role</span></a>
+      </div>
+    </div>
+ 
+    <!-- Chapter 2 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch2">
+        <div class="toc-chapter-badge">CH 02</div>
+        <div class="toc-chapter-title">The Hidden Damage of Being the Scapegoat or "Strong One"</div>
+        <div class="toc-chapter-page">30</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch2-1"><span class="toc-sub-num">2.1</span><span class="toc-sub-name">What Scapegoating Actually Does to a Person</span></a>
+        <a class="toc-sub" href="#ch2-2"><span class="toc-sub-num">2.2</span><span class="toc-sub-name">Why the Strong Ones Secretly Break Inside</span></a>
+        <a class="toc-sub" href="#ch2-3"><span class="toc-sub-num">2.3</span><span class="toc-sub-name">The Adult Symptoms Nobody Connects Back to Family</span></a>
+      </div>
+    </div>
+ 
+    <!-- Chapter 3 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch3">
+        <div class="toc-chapter-badge">CH 03</div>
+        <div class="toc-chapter-title">Stop Performing. Start Being.</div>
+        <div class="toc-chapter-page">53</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch3-1"><span class="toc-sub-num">3.1</span><span class="toc-sub-name">The Exhaustion of Performing a Role</span></a>
+        <a class="toc-sub" href="#ch3-2"><span class="toc-sub-num">3.2</span><span class="toc-sub-name">Separating Your Real Self From the Role</span></a>
+        <a class="toc-sub" href="#ch3-3"><span class="toc-sub-num">3.3</span><span class="toc-sub-name">The Fear of Changing</span></a>
+      </div>
+    </div>
+ 
+    <!-- Chapter 4 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch4">
+        <div class="toc-chapter-badge">CH 04</div>
+        <div class="toc-chapter-title">Breaking the Pattern of Being the Strong One</div>
+        <div class="toc-chapter-page">76</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch4-1"><span class="toc-sub-num">4.1</span><span class="toc-sub-name">Why You Feel Responsible for Everyone</span></a>
+        <a class="toc-sub" href="#ch4-2"><span class="toc-sub-num">4.2</span><span class="toc-sub-name">Learning to Put the Weight Down</span></a>
+        <a class="toc-sub" href="#ch4-3"><span class="toc-sub-num">4.3</span><span class="toc-sub-name">Rebuilding a Healthy Identity</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">2</div>
+</div>
+ 
+ 
+<!-- ==================== TABLE OF CONTENTS — PART 2 ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">Breaking The Cycle</span>
+    <i class="fas fa-list page-header-icon"></i>
+  </div>
+  <div class="toc-body">
+    <div class="section-eyebrow">Navigation (cont.)</div>
+    <div class="toc-section-title">Table of Contents</div>
+    <div class="toc-tagline">Continued — chapters five through eight.</div>
+ 
+    <div class="toc-group-label"><i class="fas fa-layer-group" style="color:var(--accent-deep);font-size:10px;"></i> Chapters (cont.)</div>
+ 
+    <!-- Chapter 5 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch5">
+        <div class="toc-chapter-badge">CH 05</div>
+        <div class="toc-chapter-title">Escaping the Scapegoat Identity</div>
+        <div class="toc-chapter-page">99</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch5-1"><span class="toc-sub-num">5.1</span><span class="toc-sub-name">Why Families Need a "Problem Person"</span></a>
+        <a class="toc-sub" href="#ch5-2"><span class="toc-sub-num">5.2</span><span class="toc-sub-name">Healing the Belief That You Are the Problem</span></a>
+        <a class="toc-sub" href="#ch5-3"><span class="toc-sub-num">5.3</span><span class="toc-sub-name">Ending the Cycle of Self-Sabotage</span></a>
+      </div>
+    </div>
+ 
+    <!-- Chapter 6 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch6">
+        <div class="toc-chapter-badge">CH 06</div>
+        <div class="toc-chapter-title">Your Needs Were Never the Problem</div>
+        <div class="toc-chapter-page">122</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch6-1"><span class="toc-sub-num">6.1</span><span class="toc-sub-name">Relearning Emotional Safety</span></a>
+        <a class="toc-sub" href="#ch6-2"><span class="toc-sub-num">6.2</span><span class="toc-sub-name">Boundaries Without Shame</span></a>
+        <a class="toc-sub" href="#ch6-3"><span class="toc-sub-num">6.3</span><span class="toc-sub-name">Reclaiming Emotional Space</span></a>
+      </div>
+    </div>
+ 
+    <!-- Chapter 7 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch7">
+        <div class="toc-chapter-badge">CH 07</div>
+        <div class="toc-chapter-title">Finding Who You Actually Are Under the Role</div>
+        <div class="toc-chapter-page">145</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch7-1"><span class="toc-sub-num">7.1</span><span class="toc-sub-name">Grieving the Person You Had to Become</span></a>
+        <a class="toc-sub" href="#ch7-2"><span class="toc-sub-num">7.2</span><span class="toc-sub-name">Reconnecting With Yourself</span></a>
+        <a class="toc-sub" href="#ch7-3"><span class="toc-sub-num">7.3</span><span class="toc-sub-name">Becoming Someone You No Longer Need to Escape</span></a>
+      </div>
+    </div>
+ 
+    <!-- Chapter 8 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch8">
+        <div class="toc-chapter-badge">CH 08</div>
+        <div class="toc-chapter-title">Becoming Someone Your Old Role Can't Contain</div>
+        <div class="toc-chapter-page">168</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch8-1"><span class="toc-sub-num">8.1</span><span class="toc-sub-name">Living Without Constant Performance</span></a>
+        <a class="toc-sub" href="#ch8-2"><span class="toc-sub-num">8.2</span><span class="toc-sub-name">Accepting That Some People Will Resist Your Change</span></a>
+        <a class="toc-sub" href="#ch8-3"><span class="toc-sub-num">8.3</span><span class="toc-sub-name">A New Relationship With Yourself</span></a>
+      </div>
+    </div>
+ 
+    <div style="margin-top:18px; padding:12px 14px; background:var(--black); border-radius:10px; text-align:center;">
+      <div style="font-size:10px; color:var(--accent); letter-spacing:2px; text-transform:uppercase; margin-bottom:4px;">A Note on Page Numbers</div>
+      <div style="font-size:12px; color:#c0c0c0; line-height:1.5;">Chapter page numbers are estimated and will be finalized once all chapter content is complete.</div>
+    </div>
+  </div>
+  <div class="page-number">3</div>
+</div>
+ 
+ 
+<!-- ==================== ABOUT THIS BOOK ==================== -->
+<div class="page" id="about">
+  <div class="page-header">
+    <span class="page-header-title">About This Book</span>
+    <i class="fas fa-book-open page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Front Matter</div>
+    <div class="section-title">About This Book <span style="font-family:'Inter';font-size:24px;">📖</span></div>
+    <div class="section-divider"></div>
+ 
+    <p class="body-text">This book is for the people who became who their family needed them to be before they ever had the chance to discover who they really were.</p>
+ 
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-shield-halved"></i></div>
+      <div class="archetype-name">The strong one.</div>
+    </div>
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-dove"></i></div>
+      <div class="archetype-name">The peacekeeper.</div>
+    </div>
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-bullseye"></i></div>
+      <div class="archetype-name">The scapegoat.</div>
+    </div>
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-ghost"></i></div>
+      <div class="archetype-name">The invisible child.</div>
+    </div>
+ 
+    <p class="body-text" style="margin-top:18px;">If you are exhausted from carrying roles that no longer fit you, this book will help you understand where those patterns came from — and how to finally break them without guilt.</p>
+ 
+    <div class="emphasis-stack">
+      <div class="emphasis-line neg">Not through empty motivation.</div>
+      <div class="emphasis-line neg">Not through blame.</div>
+      <div class="emphasis-line pos">But through real awareness, emotional healing, and practical change.</div>
+    </div>
+  </div>
+  <div class="page-number">4</div>
+</div>
+ 
+ 
+<!-- ==================== DISCLAIMER / WHAT YOU'LL FIND HERE ==================== -->
+<div class="page" id="whats-inside">
+  <div class="page-header">
+    <span class="page-header-title">What You'll Find Here</span>
+    <i class="fas fa-map page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Disclaimer</div>
+    <div class="section-title">What You'll Find Here</div>
+    <div class="section-divider"></div>
+ 
+    <div class="contrast-row no">
+      <div class="contrast-row-icon">✕</div>
+      <div class="contrast-row-text">
+        <strong>What this book is NOT</strong>
+        This is not a book about hating your family.
+      </div>
+    </div>
+    <div class="contrast-row yes">
+      <div class="contrast-row-icon">✓</div>
+      <div class="contrast-row-text">
+        <strong>What this book IS</strong>
+        It is a book about understanding the emotional patterns that shaped you so you can stop abandoning yourself to keep other people comfortable.
+      </div>
+    </div>
+ 
+    <div style="font-size:13px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:22px 0 12px; display:flex; align-items:center; gap:8px;">
+      <i class="fas fa-circle-check" style="color:var(--accent);font-size:13px;"></i> Inside, you'll find:
+    </div>
+ 
+    <div class="value-list">
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-heart-pulse"></i></div>
+        <div class="value-row-text">practical emotional healing tools</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-brain"></i></div>
+        <div class="value-row-text">nervous system awareness</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-people-roof"></i></div>
+        <div class="value-row-text">family role patterns explained clearly</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-hand"></i></div>
+        <div class="value-row-text">ways to stop people-pleasing and over-functioning</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-user-check"></i></div>
+        <div class="value-row-text">guidance for reclaiming your identity</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-shield"></i></div>
+        <div class="value-row-text">healthy boundary work without emotional jargon</div>
+      </div>
+    </div>
+ 
+    <div class="disclaimer-note">
+      <div class="disclaimer-note-icon"><i class="fas fa-circle-info"></i></div>
+      <div class="disclaimer-note-text">
+        This book is educational and transformational in nature, but it is not a replacement for professional mental health care or therapy.
+      </div>
+    </div>
+  </div>
+  <div class="page-number">5</div>
+</div>
+ 
+ 
+<!-- ==================== HOW TO USE THIS BOOK ==================== -->
+<div class="page" id="how-to-use">
+  <div class="page-header">
+    <span class="page-header-title">How to Use This Book</span>
+    <i class="fas fa-compass page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Reader's Guide</div>
+    <div class="section-title">How to Use This Book <span style="font-family:'Inter';font-size:24px;">🗺️</span></div>
+    <div class="section-divider"></div>
+ 
+    <p class="body-text" style="font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:var(--black);font-weight:600;">Do not rush through this book just to finish it.</p>
+ 
+    <div style="font-size:11px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:14px 0 10px;">As you read, some parts will feel...</div>
+ 
+    <div class="feeling-row">
+      <div class="feeling-row-emoji">💚</div>
+      <div class="feeling-row-text">Some parts will feel validating.</div>
+    </div>
+    <div class="feeling-row">
+      <div class="feeling-row-emoji">😣</div>
+      <div class="feeling-row-text">Some parts may feel uncomfortable.</div>
+    </div>
+    <div class="feeling-row">
+      <div class="feeling-row-emoji">💡</div>
+      <div class="feeling-row-text">Others may explain emotions you have carried for years but never had language for.</div>
+    </div>
+ 
+    <div style="font-size:11px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:18px 0 10px;">How to move through it</div>
+ 
+    <div class="step-row">
+      <div class="step-num">1</div>
+      <div class="step-text">Take your time with the exercises and reflections.</div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">2</div>
+      <div class="step-text">Pause when something deeply resonates.</div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">3</div>
+      <div class="step-text">Come back to sections more than once if needed.</div>
+    </div>
+ 
+    <div class="closing-highlight">
+      <div class="closing-highlight-label"><i class="fas fa-feather"></i> &nbsp; Remember</div>
+      <div class="closing-highlight-text">This is not about becoming a completely different person overnight. It is about slowly returning to the person you were before survival became your identity.</div>
+    </div>
+  </div>
+  <div class="page-number">6</div>
+</div>
+ 
+ 
+<!-- ==================== CHAPTER 1 — COVER PAGE ==================== -->
+<div class="page chapter-cover" id="ch1">
+  <div class="chapter-cover-bg-rings" aria-hidden="true">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="200" r="190" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="2 6"/>
+      <circle cx="200" cy="200" r="150" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="4 8"/>
+      <circle cx="200" cy="200" r="110" fill="none" stroke="#c8a96e" stroke-width="1.5" stroke-dasharray="80 200"/>
+      <circle cx="200" cy="200" r="70" fill="none" stroke="#c8a96e" stroke-width="1.5"/>
+      <circle cx="200" cy="200" r="35" fill="none" stroke="#c8a96e" stroke-width="2"/>
+    </svg>
+  </div>
+  <div class="chapter-cover-content">
+    <div class="chapter-cover-eyebrow">Chapter One</div>
+    <div class="chapter-cover-number">01</div>
+    <div class="chapter-cover-divider-x"></div>
+    <div class="chapter-cover-title">The Role You Were<br>Forced to Become</div>
+    <div class="chapter-preview">
+      <div class="chapter-preview-label">In This Chapter</div>
+      <div class="chapter-preview-list">
+        <div class="chapter-preview-row"><span class="num">1.1</span><span>Families Don't Just Raise Children — They Assign Roles</span></div>
+        <div class="chapter-preview-row"><span class="num">1.2</span><span>Why You Adapted Instead of Resisted</span></div>
+        <div class="chapter-preview-row"><span class="num">1.3</span><span>Signs You're Still Living Inside the Role</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number" style="color:rgba(255,255,255,0.45);">7</div>
+</div>
+ 
+ 
+<!-- ==================== CHAPTER 1 — INTRO (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 1 · The Role You Were Forced to Become</span>
+    <i class="fas fa-feather page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">Most people do not become who they truly are in childhood.</p>
+    <p class="body-text">They become who they need to be in order to survive the environment they were raised in.</p>
+    <p class="body-text">Some become strong. Some become the peacekeeper. Some learn to stay invisible. Others become the emotional support system for an entire family before they are even old enough to understand what they are carrying.</p>
+    <p class="body-text">At first, these roles seem normal. Sometimes they are even praised. People admire the dependable child, the selfless one, the one who never complains and always holds everything together.</p>
+    <p class="body-text">But over time, many people begin to feel exhausted by a version of themselves they never consciously chose.</p>
+    <p class="body-text">They struggle to rest without guilt. They feel responsible for everyone else's emotions. They say yes when they want to say no. And somewhere deep down, they begin to wonder whether the person everyone depends on is who they truly are or simply who they had to become.</p>
+  </div>
+  <div class="page-number">8</div>
+</div>
+ 
+ 
+<!-- ==================== CHAPTER 1 — INTRO (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 1 · The Role You Were Forced to Become</span>
+    <i class="fas fa-feather page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">This book was written for those people.</p>
+    <p class="body-text">Not to teach you how to hate your family. Not to convince you that your past defines you forever. But to help you recognize the patterns that shaped you, break free from the roles that are draining you, and reconnect with the person underneath the performance.</p>
+    <p class="body-text">Because constantly surviving is not the same thing as truly living.</p>
+    <p class="body-text">And there comes a moment when being the strong one no longer feels like strength at all.</p>
+    <div class="pull-quote">
+      <span class="pull-quote-mark">"</span>
+      It just feels lonely.
+    </div>
+  </div>
+  <div class="page-number">9</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1 — SECTION OPENER (PART 1) ==================== -->
+<div class="page" id="ch1-1">
+  <div class="page-header">
+    <span class="page-header-title">1.1 · Families Assign Roles</span>
+    <i class="fas fa-people-roof page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">SECTION 1.1</div>
+    <div class="subsection-title">Families Don't Just Raise Children — They Assign Roles</div>
+    <div class="subsection-divider"></div>
+ 
+    <p class="body-text">A family is more than a group of people living together. It is an emotional system. In healthy families, that system has flexibility. Children are allowed to grow into themselves naturally. They can be upset without becoming a burden. They can make mistakes without carrying shame for years. They can express emotions without feeling responsible for everyone else's reaction.</p>
+    <p class="body-text">But in emotionally unhealthy environments, something different happens.</p>
+    <p class="body-text">The family slowly begins organizing itself around survival instead of connection.</p>
+    <p class="body-text">And when that happens, children unconsciously take on emotional roles to keep the system stable.</p>
+    <p class="body-text">One child becomes responsible far too early. Another becomes the emotional target. One learns to disappear quietly. Another becomes the person who keeps everyone calm.</p>
+  </div>
+  <div class="page-number">10</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1 — SECTION OPENER (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1 · Families Assign Roles</span>
+    <i class="fas fa-people-roof page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">Nobody sits children down and assigns these roles directly. The child simply learns, through repetition, who they need to become in order to feel safe, accepted, or emotionally connected.</p>
+ 
+    <div class="pull-quote">
+      <span class="pull-quote-mark">"</span>
+      Over time, the role stops feeling like a strategy.<br>It starts feeling like a personality.
+    </div>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">Research in family systems theory has long shown that families naturally try to maintain emotional balance, even when the patterns inside the home are unhealthy. Children are especially sensitive to this. They absorb tension quickly and adapt themselves around it.</div>
+    </div>
+ 
+    <p class="body-text">That adaptation is intelligent.</p>
+    <p class="body-text">But it can also become deeply limiting later in life.</p>
+    <p class="body-text">Because many adults are still living inside roles they created as children. Not because those roles still serve them. Because the nervous system learned them early and repeated them often.</p>
+  </div>
+  <div class="page-number">11</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.1 — THE STRONG ONE (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.1 · The Strong One</span>
+    <i class="fas fa-shield-halved page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.1.1</div>
+    <div class="subsection-title">The Strong One</div>
+ 
+    <div class="profile-card">
+      <div class="profile-card-icon"><i class="fas fa-shield-halved"></i></div>
+      <div class="profile-card-text">
+        <div class="profile-card-label">The Role</div>
+        <div class="profile-card-name">The Strong One</div>
+        <div class="profile-card-tagline">"the child people admire"</div>
+      </div>
+    </div>
+ 
+    <p class="body-text">The strong one is usually the child people admire.</p>
+    <p class="body-text">They are dependable, mature, emotionally controlled, and capable under pressure. While everyone else is overwhelmed, they stay functional. While others fall apart, they hold everything together.</p>
+    <p class="body-text">From the outside, this role looks powerful.</p>
+    <p class="body-text">But many strong ones were never truly given the chance to be children.</p>
+    <p class="body-text">They became strong because the environment around them demanded it.</p>
+    <p class="body-text">Sometimes there was chaos at home. Sometimes emotionally unavailable parents. Sometimes addiction, financial instability, illness, conflict, or simply adults who were too overwhelmed to carry their own emotional weight.</p>
+  </div>
+  <div class="page-number">12</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.1 — THE STRONG ONE (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.1 · The Strong One</span>
+    <i class="fas fa-shield-halved page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">So the child adapted.</p>
+    <p class="body-text">They learned not to need too much. They became responsible early. Helpful early. Emotionally aware early.</p>
+    <p class="body-text">And because families naturally lean on whoever seems most capable, the child who appears "strong" often ends up carrying more and more.</p>
+    <p class="body-text">At first, this can even feel rewarding. People praise them for being mature. Reliable. Selfless. Easy to depend on.</p>
+    <p class="body-text">But beneath that praise, many strong ones quietly develop a painful belief:</p>
+ 
+    <div class="belief-callout">
+      <div class="belief-callout-label"><i class="fas fa-quote-left"></i> The Hidden Belief</div>
+      <div class="belief-callout-text">My value comes from what I can carry for other people.</div>
+    </div>
+ 
+    <p class="body-text">That belief follows them into adulthood.</p>
+    <p class="body-text">They become the friend everyone calls during a crisis but rarely checks on afterward. The partner who over-functions in relationships. The employee who cannot rest without guilt. The person who feels uncomfortable receiving help because they were trained to survive by being useful.</p>
+  </div>
+  <div class="page-number">13</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.1 — THE STRONG ONE (PART 3) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.1 · The Strong One</span>
+    <i class="fas fa-shield-halved page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">Research on parentification, the process where children take on emotional or practical adult responsibilities too early has shown long-term links to anxiety, hyper-independence, emotional burnout, and chronic over-responsibility in adulthood.</div>
+    </div>
+ 
+    <p class="body-text">Many strong ones spend years believing their exhaustion is weakness.</p>
+ 
+    <div class="emphasis-strong">In reality, they are simply carrying a role that was never meant to last forever.</div>
+  </div>
+  <div class="page-number">14</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.2 — THE SCAPEGOAT (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.2 · The Scapegoat</span>
+    <i class="fas fa-bullseye page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.1.2</div>
+    <div class="subsection-title">The Scapegoat</div>
+ 
+    <div class="profile-card">
+      <div class="profile-card-icon"><i class="fas fa-bullseye"></i></div>
+      <div class="profile-card-text">
+        <div class="profile-card-label">The Role</div>
+        <div class="profile-card-name">The Scapegoat</div>
+        <div class="profile-card-tagline">"the emotional container for the family's frustration"</div>
+      </div>
+    </div>
+ 
+    <p class="body-text">Every unhealthy system needs somewhere for the tension to go.</p>
+    <p class="body-text">In some families, that tension quietly gets placed onto one person.</p>
+    <p class="body-text">The scapegoat is often the child who gets blamed for problems that were already present long before them. Sometimes they are more emotionally expressive than the rest of the family. Sometimes they speak uncomfortable truths. Sometimes they are simply different in a way the system does not know how to tolerate.</p>
+    <p class="body-text">Over time, they become the emotional container for the family's frustration, shame, anger, or dysfunction.</p>
+    <p class="body-text">If conflict happens, they are accused of causing it. If they react emotionally, their reaction becomes the problem instead of what caused it.</p>
+  </div>
+  <div class="page-number">15</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.2 — THE SCAPEGOAT (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.2 · The Scapegoat</span>
+    <i class="fas fa-bullseye page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">And eventually, they begin questioning themselves constantly.</p>
+ 
+    <div class="inner-voice">
+      <div class="inner-voice-label"><i class="fas fa-brain"></i> The Internal Voice</div>
+      <div class="inner-voice-line">Maybe I really am too sensitive.</div>
+      <div class="inner-voice-line">Maybe I am difficult.</div>
+      <div class="inner-voice-line">Maybe everything would be easier if I were different.</div>
+    </div>
+ 
+    <p class="body-text">That kind of conditioning runs deep.</p>
+    <p class="body-text">Many scapegoats grow into adults who feel defensive before anything has even happened. They over-explain themselves. They apologize too quickly. They expect rejection before connection. Even in healthy relationships, part of them is waiting to become the problem again.</p>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">Research on emotional invalidation and family scapegoating has shown that repeated blame exposure in childhood can strongly affect self-worth, emotional regulation, and identity development later in life.</div>
+    </div>
+ 
+    <p class="body-text">One of the hardest things for scapegoats to understand is that being blamed repeatedly does not automatically mean you were the problem.</p>
+ 
+    <div class="emphasis-strong">Sometimes dysfunctional systems protect themselves by choosing a target instead of facing the truth.</div>
+  </div>
+  <div class="page-number">16</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.3 — THE PEACEKEEPER (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.3 · The Peacekeeper</span>
+    <i class="fas fa-dove page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.1.3</div>
+    <div class="subsection-title">The Peacekeeper</div>
+ 
+    <div class="profile-card">
+      <div class="profile-card-icon"><i class="fas fa-dove"></i></div>
+      <div class="profile-card-text">
+        <div class="profile-card-label">The Role</div>
+        <div class="profile-card-name">The Peacekeeper</div>
+        <div class="profile-card-tagline">"they learned how to read a room"</div>
+      </div>
+    </div>
+ 
+    <p class="body-text">The peacekeeper learns very early how to read a room.</p>
+    <p class="body-text">They notice tone changes, tension shifts, facial expressions, silence, irritation, emotional distance. They become deeply sensitive to the moods of other people because conflict inside the home feels emotionally unsafe.</p>
+    <p class="body-text">So they adapt by keeping the peace.</p>
+    <p class="body-text">They calm people down. They avoid disagreement. They smooth things over before situations escalate. They become agreeable, careful, and emotionally accommodating.</p>
+    <p class="body-text">From the outside, they often seem kind and easygoing.</p>
+    <p class="body-text">But internally, many peacekeepers are exhausted.</p>
+    <p class="body-text">Because they learned that other people's emotions were their responsibility to manage.</p>
+  </div>
+  <div class="page-number">17</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.3 — THE PEACEKEEPER (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.3 · The Peacekeeper</span>
+    <i class="fas fa-dove page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">As adults, they struggle with confrontation. Even small disagreements can trigger intense anxiety. They say yes when they want to say no. They apologize for things that are not theirs to carry. They abandon their own needs to avoid upsetting people around them.</p>
+    <p class="body-text">And after years of this, many peacekeepers lose touch with what they genuinely feel because they have spent so much time monitoring everyone else.</p>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">Research on conflict-avoidant behavior and people-pleasing patterns has repeatedly shown connections between emotionally unpredictable childhood environments and chronic self-silencing in adulthood.</div>
+    </div>
+ 
+    <div class="emphasis-strong">The peacekeeper often becomes so focused on maintaining harmony around them that they stop noticing the growing tension inside themselves.</div>
+  </div>
+  <div class="page-number">18</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.4 — THE INVISIBLE CHILD (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.4 · The Invisible Child</span>
+    <i class="fas fa-ghost page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.1.4</div>
+    <div class="subsection-title">The Invisible Child</div>
+ 
+    <div class="profile-card">
+      <div class="profile-card-icon"><i class="fas fa-ghost"></i></div>
+      <div class="profile-card-text">
+        <div class="profile-card-label">The Role</div>
+        <div class="profile-card-name">The Invisible Child</div>
+        <div class="profile-card-tagline">"they survive by becoming emotionally invisible"</div>
+      </div>
+    </div>
+ 
+    <p class="body-text">Some children survive by becoming emotionally invisible.</p>
+    <p class="body-text">They stay quiet. Independent. Low-maintenance. They learn not to ask for much because somewhere along the way, they sensed there was no emotional space for their needs.</p>
+    <p class="body-text">This often happens in homes where attention is consumed by conflict, addiction, mental illness, instability, or another family member's overwhelming needs.</p>
+    <p class="body-text">The invisible child learns to disappear without physically leaving.</p>
+    <p class="body-text">They spend time alone. They avoid creating problems. They stop expressing emotions openly. Adults may even praise them for being "easy" or "independent."</p>
+  </div>
+  <div class="page-number">19</div>
+</div>
+ 
+ 
+<!-- ==================== 1.1.4 — THE INVISIBLE CHILD (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.1.4 · The Invisible Child</span>
+    <i class="fas fa-ghost page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">But what looks like independence is often emotional withdrawal.</p>
+    <p class="body-text">Children do not stop needing connection simply because they stop asking for it.</p>
+    <p class="body-text">And many invisible children grow into adults who struggle deeply with self-worth because they spent years learning how not to take up space.</p>
+    <p class="body-text">They may have difficulty expressing preferences, asking for help, speaking up in relationships, or believing their presence matters.</p>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">Research on childhood emotional neglect has consistently shown that the absence of emotional attunement can deeply affect identity, emotional awareness, and relationship patterns later in life.</div>
+    </div>
+ 
+    <p class="body-text">Many invisible children become adults who feel unseen even in rooms full of people.</p>
+ 
+    <div class="emphasis-strong">Because invisibility became familiar.</div>
+  </div>
+  <div class="page-number">20</div>
+</div>
+ 
+ 
+<!-- ==================== 1.2 — SECTION OPENER (PART 1) ==================== -->
+<div class="page" id="ch1-2">
+  <div class="page-header">
+    <span class="page-header-title">1.2 · Why You Adapted Instead of Resisted</span>
+    <i class="fas fa-seedling page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">SECTION 1.2</div>
+    <div class="subsection-title">Why You Adapted Instead of Resisted</div>
+    <div class="subsection-divider"></div>
+ 
+    <p class="body-text">When people first begin recognizing these patterns, many immediately turn against themselves.</p>
+    <p class="body-text">They ask:</p>
+ 
+    <div class="inner-voice">
+      <div class="inner-voice-label"><i class="fas fa-comment-dots"></i> The Self-Blame</div>
+      <div class="inner-voice-line">Why didn't I stand up for myself?</div>
+      <div class="inner-voice-line">Why did I become this way?</div>
+      <div class="inner-voice-line">Why did I spend so much of my life trying to please people who drained me?</div>
+    </div>
+ 
+    <p class="body-text">But healing becomes much harder when self-awareness turns into self-blame.</p>
+ 
+    <div class="emphasis-strong">Because the truth is, your adaptation was not a weakness.<br>It was survival.</div>
+  </div>
+  <div class="page-number">21</div>
+</div>
+ 
+ 
+<!-- ==================== 1.2 — SECTION OPENER (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.2 · Why You Adapted Instead of Resisted</span>
+    <i class="fas fa-seedling page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">Children are biologically wired to maintain connection with caregivers. Even when the environment is unhealthy, the nervous system still prioritizes attachment because attachment equals safety.</p>
+    <p class="body-text">That means children naturally adapt themselves around whatever keeps connection intact.</p>
+ 
+    <div class="survival-stack">
+      <div class="survival-row">
+        <div class="survival-if"><span class="badge">IF</span><span>expressing emotion creates rejection,</span></div>
+        <div class="survival-then"><span class="badge">THEN</span><span>the child suppresses emotion.</span></div>
+      </div>
+      <div class="survival-row">
+        <div class="survival-if"><span class="badge">IF</span><span>needing help creates shame,</span></div>
+        <div class="survival-then"><span class="badge">THEN</span><span>the child becomes hyper-independent.</span></div>
+      </div>
+      <div class="survival-row">
+        <div class="survival-if"><span class="badge">IF</span><span>being useful earns love,</span></div>
+        <div class="survival-then"><span class="badge">THEN</span><span>the child becomes responsible for everyone.</span></div>
+      </div>
+    </div>
+ 
+    <p class="body-text">The adaptation makes sense when viewed through the eyes of survival.</p>
+    <p class="body-text">The problem is that many people continue living from those same patterns long after the original environment is gone.</p>
+  </div>
+  <div class="page-number">22</div>
+</div>
+ 
+ 
+<!-- ==================== 1.2.1 — SURVIVAL BECOMES IDENTITY ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.2.1 · Survival Becomes Identity</span>
+    <i class="fas fa-arrows-spin page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.2.1</div>
+    <div class="subsection-title">Survival Becomes Identity</div>
+ 
+    <p class="body-text">At first, these behaviors are protective.</p>
+    <p class="body-text">But repeated long enough, protection starts becoming a personality.</p>
+ 
+    <div class="transformation">
+      <div class="transformation-row">
+        <div class="transformation-then"><span class="badge">CHILD</span><span>The child who learns not to cry</span></div>
+        <div class="transformation-arrow">↓ becomes ↓</div>
+        <div class="transformation-now"><span class="badge">ADULT</span><span>"emotionally strong."</span></div>
+      </div>
+      <div class="transformation-row">
+        <div class="transformation-then"><span class="badge">CHILD</span><span>The child who stays quiet</span></div>
+        <div class="transformation-arrow">↓ becomes ↓</div>
+        <div class="transformation-now"><span class="badge">ADULT</span><span>"easygoing."</span></div>
+      </div>
+      <div class="transformation-row">
+        <div class="transformation-then"><span class="badge">CHILD</span><span>The child who takes care of everyone</span></div>
+        <div class="transformation-arrow">↓ becomes ↓</div>
+        <div class="transformation-now"><span class="badge">ADULT</span><span>"mature."</span></div>
+      </div>
+    </div>
+ 
+    <p class="body-text">Over time, the role fuses with identity so completely that many adults no longer recognize it as conditioning.</p>
+ 
+    <div class="belief-callout">
+      <div class="belief-callout-label"><i class="fas fa-quote-left"></i> The Quiet Thought</div>
+      <div class="belief-callout-text">This is just who I am.</div>
+    </div>
+ 
+    <p class="body-text">But many traits people consider personality were originally survival responses repeated for years.</p>
+  </div>
+  <div class="page-number">23</div>
+</div>
+ 
+ 
+<!-- ==================== 1.2.1 — SURVIVAL BECOMES IDENTITY (CONT.) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.2.1 · Survival Becomes Identity</span>
+    <i class="fas fa-arrows-spin page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">Research in attachment theory and developmental neuroscience has shown that repeated emotional experiences during childhood shape the nervous system deeply. The brain learns what behaviors reduce danger and increase connection, then reinforces those patterns automatically over time.</div>
+    </div>
+ 
+    <p class="body-text">That is why letting go of old roles can feel frightening even when those roles are causing suffering.</p>
+ 
+    <div class="emphasis-strong">The nervous system often mistakes familiarity for safety.</div>
+  </div>
+  <div class="page-number">24</div>
+</div>
+ 
+ 
+<!-- ==================== 1.2.2 — WHY CHILDREN BECOME WHO THE FAMILY NEEDS ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.2.2 · Why Children Become Who the Family Needs</span>
+    <i class="fas fa-house-chimney-user page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.2.2</div>
+    <div class="subsection-title">Why Children Become Who the Family Needs</div>
+ 
+    <p class="body-text">Children are incredibly sensitive to emotional environments.</p>
+    <p class="body-text">They notice what causes stress. What earns approval. What creates rejection. What keeps the household stable.</p>
+    <p class="body-text">And without consciously realizing it, they begin shaping themselves around those patterns.</p>
+    <p class="body-text">A child with an emotionally overwhelmed parent may become low-maintenance. A child in a chaotic household may become hyper-responsible. Another may become emotionally invisible simply to avoid adding more pressure to the system.</p>
+    <p class="body-text">Children do not usually choose these roles logically.</p>
+    <p class="body-text">Their nervous system chooses them automatically.</p>
+    <p class="body-text">Because when you are young, survival matters more than authenticity.</p>
+    <p class="body-text">You became who the family needed because, at the time, it protected your connection to the people you depended on most.</p>
+    <p class="body-text">Understanding this changes something important.</p>
+ 
+    <div class="emphasis-strong">It replaces shame with compassion.</div>
+  </div>
+  <div class="page-number">25</div>
+</div>
+ 
+ 
+<!-- ==================== 1.3 — SECTION OPENER ==================== -->
+<div class="page" id="ch1-3">
+  <div class="page-header">
+    <span class="page-header-title">1.3 · Signs You're Still Living Inside the Role</span>
+    <i class="fas fa-magnifying-glass page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">SECTION 1.3</div>
+    <div class="subsection-title">Signs You're Still Living Inside the Role</div>
+    <div class="subsection-divider"></div>
+ 
+    <p class="body-text">The role may have started in childhood, but many people continue carrying it far into adulthood without realizing it.</p>
+    <p class="body-text">Not because they want to.</p>
+    <p class="body-text">Because the behavior became automatic.</p>
+    <p class="body-text">And one of the clearest signs that the role is still active is this:</p>
+ 
+    <div class="emphasis-strong">You feel emotionally responsible for things that were never truly yours to carry.</div>
+  </div>
+  <div class="page-number">26</div>
+</div>
+ 
+ 
+<!-- ==================== 1.3.1 — FEELING RESPONSIBLE FOR EVERYONE ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.3.1 · Feeling Responsible for Everyone</span>
+    <i class="fas fa-weight-hanging page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.3.1</div>
+    <div class="subsection-title">Feeling Responsible for Everyone</div>
+ 
+    <p class="body-text">You walk into a room and immediately sense tension.</p>
+    <p class="body-text">Someone is upset, stressed, irritated, distant, overwhelmed, or emotionally shut down, and part of you instantly feels responsible for fixing it.</p>
+ 
+    <div class="scenario-item">
+      <div class="scenario-bullet"><i class="fas fa-arrow-right"></i></div>
+      <div class="scenario-text">So you help before being asked.</div>
+    </div>
+    <div class="scenario-item">
+      <div class="scenario-bullet"><i class="fas fa-arrow-right"></i></div>
+      <div class="scenario-text">You over-explain to avoid misunderstandings.</div>
+    </div>
+    <div class="scenario-item">
+      <div class="scenario-bullet"><i class="fas fa-arrow-right"></i></div>
+      <div class="scenario-text">You carry emotional pressure that does not belong to you.</div>
+    </div>
+ 
+    <p class="body-text">And when people around you are unhappy, you struggle to relax.</p>
+    <p class="body-text">Many people trapped inside childhood roles spend so much time monitoring others emotionally that they lose connection with themselves completely.</p>
+ 
+    <div class="reflection-prompt">
+      <div class="reflection-prompt-label">A Useful Question</div>
+      <div class="reflection-prompt-text">What am I truly responsible for here?</div>
+    </div>
+ 
+    <p class="body-text">Not every emotional problem around you belongs to you.</p>
+    <p class="body-text">And constantly rescuing others often prevents them from carrying responsibility for themselves.</p>
+  </div>
+  <div class="page-number">27</div>
+</div>
+ 
+ 
+<!-- ==================== 1.3.2 — GUILT WHEN PRIORITIZING YOURSELF ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.3.2 · Guilt When Prioritizing Yourself</span>
+    <i class="fas fa-heart-circle-exclamation page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.3.2</div>
+    <div class="subsection-title">Guilt When Prioritizing Yourself</div>
+ 
+    <p class="body-text">For many people, guilt appears the moment they begin choosing themselves.</p>
+    <p class="body-text">Saying no feels cruel. Rest feels selfish. Setting boundaries feels dangerous.</p>
+    <p class="body-text">Not because these things are wrong.</p>
+    <p class="body-text">Because childhood conditioning taught them that love was connected to self-sacrifice.</p>
+    <p class="body-text">So even healthy choices can trigger emotional discomfort.</p>
+    <p class="body-text">This is why many people abandon boundaries almost immediately after creating them. They mistake guilt for evidence that they are hurting someone.</p>
+ 
+    <div class="belief-callout">
+      <div class="belief-callout-label"><i class="fas fa-lightbulb"></i> The Reframe</div>
+      <div class="belief-callout-text">But guilt is not always proof that you are doing something wrong.<br>Sometimes it is simply proof that you are doing something differently.</div>
+    </div>
+ 
+    <p class="body-text">Learning to tolerate that discomfort without immediately abandoning yourself is one of the biggest emotional shifts in healing.</p>
+  </div>
+  <div class="page-number">28</div>
+</div>
+ 
+ 
+<!-- ==================== 1.3.3 — CONSTANT EMOTIONAL EXHAUSTION ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">1.3.3 · Constant Emotional Exhaustion</span>
+    <i class="fas fa-battery-quarter page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">1.3.3</div>
+    <div class="subsection-title">Constant Emotional Exhaustion</div>
+ 
+    <p class="body-text">One of the clearest signs you are still trapped inside the role is chronic emotional exhaustion.</p>
+ 
+    <div class="comparison-stack">
+      <div class="comparison-row surface">
+        <div class="comparison-row-label">Not This</div>
+        <div class="comparison-row-text">Not ordinary tiredness.</div>
+      </div>
+      <div class="comparison-row deeper">
+        <div class="comparison-row-label">But This</div>
+        <div class="comparison-row-text">The deeper kind that follows years of suppressing, carrying, fixing, monitoring, pleasing, explaining, over-functioning, or emotionally surviving.</div>
+      </div>
+    </div>
+ 
+    <p class="body-text">Many people living inside these patterns feel exhausted even after resting because the nervous system never fully relaxes.</p>
+    <p class="body-text">Part of them is always scanning for tension. Always preparing for emotional pressure. Always managing something internally.</p>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">Research on chronic stress and emotional suppression has shown strong links between long-term nervous system activation and fatigue, anxiety, sleep disruption, and emotional burnout.</div>
+    </div>
+ 
+    <p class="body-text">Your body keeps the score of what your mind learned to normalize.</p>
+    <p class="body-text">And eventually, the exhaustion becomes impossible to ignore.</p>
+ 
+    <div class="emphasis-strong">Because there is a difference between living your life and constantly managing emotional survival.</div>
+ 
+    <div class="chapter-end-mark">✦ ✦ ✦</div>
+  </div>
+  <div class="page-number">29</div>
+</div>
+ 
+ 
+<!-- ==================== CHAPTER 2 — COVER PAGE ==================== -->
+<div class="page chapter-cover" id="ch2">
+  <div class="chapter-cover-bg-rings" aria-hidden="true">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="200" r="190" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="2 6"/>
+      <circle cx="200" cy="200" r="150" fill="none" stroke="#c8a96e" stroke-width="1" stroke-dasharray="4 8"/>
+      <circle cx="200" cy="200" r="110" fill="none" stroke="#c8a96e" stroke-width="1.5" stroke-dasharray="80 200"/>
+      <circle cx="200" cy="200" r="70" fill="none" stroke="#c8a96e" stroke-width="1.5"/>
+      <circle cx="200" cy="200" r="35" fill="none" stroke="#c8a96e" stroke-width="2"/>
+    </svg>
+  </div>
+  <div class="chapter-cover-content">
+    <div class="chapter-cover-eyebrow">Chapter Two</div>
+    <div class="chapter-cover-number">02</div>
+    <div class="chapter-cover-divider-x"></div>
+    <div class="chapter-cover-title">The Hidden Damage of<br>Being the Scapegoat<br>or "Strong One" <span style="font-family:'Inter';font-size:24px;">🖤</span></div>
+    <div class="chapter-preview">
+      <div class="chapter-preview-label">In This Chapter</div>
+      <div class="chapter-preview-list">
+        <div class="chapter-preview-row"><span class="num">2.1</span><span>What Scapegoating Actually Does to a Person</span></div>
+        <div class="chapter-preview-row"><span class="num">2.2</span><span>Why the Strong Ones Secretly Break Inside</span></div>
+        <div class="chapter-preview-row"><span class="num">2.3</span><span>The Adult Symptoms Nobody Connects Back to Family</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number" style="color:rgba(255,255,255,0.45);">30</div>
+</div>
+ 
+ 
+<!-- ==================== CHAPTER 2 — INTRO (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 2 · Hidden Damage of the Two Roles</span>
+    <i class="fas fa-feather page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">There is a specific kind of exhaustion that sleep cannot fix. It is the weight of carrying an identity that was built entirely on your survival, rather than your truth.</p>
+    <p class="body-text">While every childhood role carries its own unique tax, two roles carry a devastatingly polarizing type of damage: <strong>The Scapegoat</strong> and <strong>The Strong One</strong>. On the outside, these two archetypes look completely opposite. One is often seen as the rebel, the outsider, or the family failure. The other is viewed as the rock, the success story, or the hyper-competent overachiever.</p>
+    <p class="body-text">But if you peel back the surface layer, you will find an identical, bleeding wound. Both are carrying things that never belonged to them. One carries the family's unaddressed darkness; the other carries the family's broken structural weight.</p>
+  </div>
+  <div class="page-number">31</div>
+</div>
+ 
+ 
+<!-- ==================== CHAPTER 2 — INTRO (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 2 · Hidden Damage of the Two Roles</span>
+    <i class="fas fa-feather page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">Before we can step into the cure, we must examine the diagnosis with absolute clarity.</p>
+ 
+    <div class="emphasis-strong">We must look at the hidden architecture of this psychological damage — not to dwell on the past, but to understand exactly what needs to be dismantled. <span style="font-style:normal;">🛠️</span></div>
+  </div>
+  <div class="page-number">32</div>
+</div>
+ 
+ 
+<!-- ==================== 2.1 — SECTION OPENER (PART 1) ==================== -->
+<div class="page" id="ch2-1">
+  <div class="page-header">
+    <span class="page-header-title">2.1 · What Scapegoating Does</span>
+    <i class="fas fa-bullseye page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">SECTION 2.1</div>
+    <div class="subsection-title">What Scapegoating Actually Does to a Person <span style="font-family:'Inter';font-size:18px;">🎯</span></div>
+    <div class="subsection-divider"></div>
+ 
+    <p class="body-text">To understand the mechanics of scapegoating, you have to look past the surface interactions of an angry family. Scapegoating is not just a series of unfair arguments or a parent who picks favorites. It is a highly sophisticated, unconscious emotional operation designed to protect the adults in the system from facing their own psychological bankruptcy.</p>
+    <p class="body-text">When a family unit is built on unhealed trauma, unresolved marital conflict, or profound emotional immaturity, the internal pressure builds up like steam in a closed boiler. The adults cannot handle the vulnerability required to fix the root cause.</p>
+  </div>
+  <div class="page-number">33</div>
+</div>
+ 
+ 
+<!-- ==================== 2.1 — SECTION OPENER (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.1 · What Scapegoating Does</span>
+    <i class="fas fa-bullseye page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="emphasis-strong">So, the system selects a lightning rod. <span style="font-style:normal;">⚡</span></div>
+ 
+    <p class="body-text" style="margin-top:24px;">The unconscious choice is rarely random. The child who becomes the lightning rod is usually the one whose nature most threatens the family's denial — and whose absorption of the blame allows the rest of the system to keep functioning without ever facing what is actually broken.</p>
+  </div>
+  <div class="page-number">34</div>
+</div>
+ 
+ 
+<!-- ==================== 2.1.1 — BEING BLAMED (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.1.1 · Being Blamed for the Family's Tension</span>
+    <i class="fas fa-bolt page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.1.1</div>
+    <div class="subsection-title">Being Blamed for the Family's Tension</div>
+ 
+    <p class="body-text">The experience of the scapegoat is an experience of inverted reality.</p>
+ 
+    <div class="inner-voice">
+      <div class="inner-voice-label"><i class="fas fa-arrow-rotate-left"></i> The Inverted Reality</div>
+      <div class="inner-voice-line">If the parents get a divorce, it's because the scapegoat was too difficult to raise.</div>
+      <div class="inner-voice-line">If a parent loses their temper, it's because the scapegoat "pushed them over the edge."</div>
+    </div>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">According to a foundational study on family projection processes published in the Journal of Marriage and Family, parents who lack emotional regulation skills will routinely externalize their internal anxiety. They select the child who is often the most intuitive, sensitive, or expressive, and label that child's behavior as the source of all household misery.</div>
+    </div>
+  </div>
+  <div class="page-number">35</div>
+</div>
+ 
+ 
+<!-- ==================== 2.1.1 — BEING BLAMED (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.1.1 · Being Blamed for the Family's Tension</span>
+    <i class="fas fa-bolt page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">This creates a terrifying psychological paradox for a developing child. You learn that your mere presence causes pain to the people you rely on for survival.</p>
+    <p class="body-text">When you are constantly blamed for the tension in your environment, your brain undergoes a structural shift. You develop a chronic state of hypervigilance, expecting accusation at every turn.</p>
+    <p class="body-text">In adult life, this manifests as an intense, underlying sense of impending doom. When things go right — when a project succeeds or a relationship is stable — the adult scapegoat feels an acute wave of panic.</p>
+ 
+    <div class="emphasis-strong">They are waiting for the other shoe to drop, because their childhood taught them that peace is simply the quiet moment before the blame arrives.</div>
+  </div>
+  <div class="page-number">36</div>
+</div>
+ 
+ 
+<!-- ==================== 2.1.2 — EMOTIONAL DUMPING GROUND (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.1.2 · The Emotional Dumping Ground</span>
+    <i class="fas fa-trash-can-arrow-up page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.1.2</div>
+    <div class="subsection-title">Becoming the Emotional Dumping Ground</div>
+ 
+    <p class="body-text">In clinical psychology, there is a concept known as <strong>projective identification</strong>. This occurs when a parent takes their own unwanted, painful traits — such as their shame, their feelings of inadequacy, or their repressed anger — and unconsciously deposits them into the child.</p>
+ 
+    <div class="emphasis-strong">If a parent feels like a failure, they will treat the child as a failure.</div>
+ 
+    <p class="body-text">Over time, the child does not just endure this treatment; they absorb it. They become the emotional dumping ground for the entire household. If an older sibling is frustrated, they take it out on the scapegoat, knowing the parents will validate the attack. The scapegoat carries the collective shadow of the family.</p>
+  </div>
+  <div class="page-number">37</div>
+</div>
+ 
+ 
+<!-- ==================== 2.1.2 — EMOTIONAL DUMPING GROUND (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.1.2 · The Emotional Dumping Ground</span>
+    <i class="fas fa-trash-can-arrow-up page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">The damage of this dynamic is a profound, calcified form of <strong>toxic shame</strong>.</p>
+ 
+    <div class="definition-stack">
+      <div class="definition-row">
+        <div class="definition-row-label">Regular Shame Says</div>
+        <div class="definition-row-text">I did something bad.</div>
+      </div>
+      <div class="definition-row severe">
+        <div class="definition-row-label">Toxic Shame Says</div>
+        <div class="definition-row-text">I am bad.</div>
+      </div>
+    </div>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">A landmark study conducted by researchers at Harvard Medical School in 2012 demonstrated that chronic emotional abuse and scapegoating in childhood literally alters the development of the corpus callosum and the prefrontal cortex. The brain adapts to a constant influx of hostility by turning inward.</div>
+    </div>
+  </div>
+  <div class="page-number">38</div>
+</div>
+ 
+ 
+<!-- ==================== 2.1.2 — EMOTIONAL DUMPING GROUND (PART 3) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.1.2 · The Emotional Dumping Ground</span>
+    <i class="fas fa-trash-can-arrow-up page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">As an adult, you carry an internalized version of your family's voice. You become your own persecutor, sabotaging your joy, rejecting love because it feels unfamiliar, and walking through the world with a heavy, unspoken belief that you are fundamentally broken.</p>
+ 
+    <div class="emphasis-strong">The voice you hear inside your own head is often not your own — it is the echo of the family system that taught you to carry their pain as your identity.</div>
+  </div>
+  <div class="page-number">39</div>
+</div>
+ 
+ 
+<!-- ==================== 2.2 — SECTION OPENER ==================== -->
+<div class="page" id="ch2-2">
+  <div class="page-header">
+    <span class="page-header-title">2.2 · Why the Strong Ones Break Inside</span>
+    <i class="fas fa-building-columns page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">SECTION 2.2</div>
+    <div class="subsection-title">Why the Strong Ones Secretly Break Inside <span style="font-family:'Inter';font-size:18px;">🏛️</span></div>
+    <div class="subsection-divider"></div>
+ 
+    <p class="body-text">On the other side of the emotional spectrum stands <strong>The Strong One</strong>. In the economy of a dysfunctional family, this child is the blue-chip asset. They are the ones who get the high grades, manage the schedules, absorb the crying fits of an emotional parent, and keep the outward appearance of the family pristine.</p>
+    <p class="body-text">Society rewards this archetype. They grow up to be the leaders, the executives, and the dependable anchors of communities.</p>
+ 
+    <div class="emphasis-strong">But this entire structure is built on quicksand.</div>
+  </div>
+  <div class="page-number">40</div>
+</div>
+ 
+ 
+<!-- ==================== 2.2.1 — OVER-FUNCTIONING (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.2.1 · Over-Functioning as Survival</span>
+    <i class="fas fa-gears page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.2.1</div>
+    <div class="subsection-title">Over-Functioning as Survival</div>
+ 
+    <p class="body-text">The Strong One does not over-function because they want to; they over-function because they are terrified of what will happen if they stop.</p>
+    <p class="body-text">In a house where a parent is depressed, addicted, or emotionally checked out, the child looks around and realizes that the ship is sinking.</p>
+    <p class="body-text">To stay safe, their nervous system overrides its natural developmental stages and enters a state of permanent mobilization.</p>
+  </div>
+  <div class="page-number">41</div>
+</div>
+ 
+ 
+<!-- ==================== 2.2.1 — OVER-FUNCTIONING (PART 2 - FLOW DIAGRAM) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.2.1 · Over-Functioning as Survival</span>
+    <i class="fas fa-gears page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div style="font-size:11px; font-weight:800; letter-spacing:2.5px; color:var(--accent-deep); text-transform:uppercase; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+      <i class="fas fa-diagram-project"></i> The Survival Cascade
+    </div>
+ 
+    <div class="flow-diagram">
+      <div class="flow-step dark">Family Chaos / Parental Collapse</div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-step">Nervous System Mobilization</div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-step">Hyper-Competence / Over-Functioning</div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-step gold">The Illusion of Safety</div>
+      <div class="flow-step-note">Must be maintained at all costs</div>
+    </div>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">According to family systems literature originating from the Bowen Center for the Study of the Family, over-functioning is a direct reaction to systemic anxiety. The child steps in to regulate the family's anxiety by becoming hyper-competent.</div>
+    </div>
+  </div>
+  <div class="page-number">42</div>
+</div>
+ 
+ 
+<!-- ==================== 2.2.1 — OVER-FUNCTIONING (PART 3) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.2.1 · Over-Functioning as Survival</span>
+    <i class="fas fa-gears page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">The hidden cost here is the complete erasure of the self. The Strong One learns that they are loved for what they do, never for who they are.</p>
+ 
+    <div class="belief-callout">
+      <div class="belief-callout-label"><i class="fas fa-quote-left"></i> The Hidden Belief</div>
+      <div class="belief-callout-text">Their identity becomes entirely transactional.</div>
+    </div>
+ 
+    <p class="body-text">If they are not producing, protecting, or performing, they feel a deep, existential void.</p>
+ 
+    <div class="emphasis-strong">Rest is accompanied by an intense, scratching anxiety, because their nervous system equates stillness with a return to childhood chaos.</div>
+  </div>
+  <div class="page-number">43</div>
+</div>
+ 
+ 
+<!-- ==================== 2.2.2 — NOBODY NOTICES YOUR PAIN (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.2.2 · Why Nobody Notices Your Pain</span>
+    <i class="fas fa-eye-slash page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.2.2</div>
+    <div class="subsection-title">Why Nobody Notices Your Pain</div>
+ 
+    <p class="body-text">The tragedy of The Strong One is that their coping mechanism is so clean, so efficient, that it completely blinds the world to their suffering. Because you look like you have it all together, people assume you don't need anything.</p>
+ 
+    <div class="emphasis-strong">Your pain is invisible because your competence is loud. <span style="font-style:normal;">📢</span></div>
+ 
+    <p class="body-text">When The Strong One goes through a crisis, their instinct is to isolate, retreat, and fix it in private. They don't cry out for help because childhood taught them that there is no one at the other end of the line who can handle their weight. If they show weakness, the whole family structure tips over.</p>
+  </div>
+  <div class="page-number">44</div>
+</div>
+ 
+ 
+<!-- ==================== 2.2.2 — NOBODY NOTICES YOUR PAIN (PART 2) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.2.2 · Why Nobody Notices Your Pain</span>
+    <i class="fas fa-eye-slash page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">This creates a profound, agonizing loneliness. You are surrounded by people who rely on you, but you have no one you can lean on.</p>
+ 
+    <div class="research-note">
+      <div class="research-note-label"><i class="fas fa-microscope"></i> Research</div>
+      <div class="research-note-text">A 2018 study published in the Journal of Affective Disorders on the long-term impacts of parentification found that adult overachievers experience exceptionally high levels of hidden depressive symptoms and somatic illness.</div>
+    </div>
+ 
+    <div class="emphasis-strong">They are breaking inside, but because they wear an armor of flawless execution, the world simply pats them on the back and asks them to carry more.</div>
+  </div>
+  <div class="page-number">45</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3 — SECTION OPENER ==================== -->
+<div class="page" id="ch2-3">
+  <div class="page-header">
+    <span class="page-header-title">2.3 · Adult Symptoms of Childhood Roles</span>
+    <i class="fas fa-link page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">SECTION 2.3</div>
+    <div class="subsection-title">The Adult Symptoms Nobody Connects Back to Family <span style="font-family:'Inter';font-size:18px;">⛓️</span></div>
+    <div class="subsection-divider"></div>
+ 
+    <p class="body-text">The human body and mind are excellent ledger-keepers. They store every ounce of compliance, every buried rage, and every rejected boundary from your youth.</p>
+    <p class="body-text">Most people walk into therapy or doctor's offices in their thirties, forties, or fifties complaining of specific adult problems, completely unaware that these problems are simply the ghosts of their childhood roles operating in the present day.</p>
+ 
+    <div class="emphasis-strong">Let us map these symptoms clearly.</div>
+  </div>
+  <div class="page-number">46</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.1 — PEOPLE-PLEASING (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.1 · People-Pleasing</span>
+    <i class="fas fa-face-smile-beam page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.3.1</div>
+    <div class="subsection-title">People-Pleasing</div>
+ 
+    <p class="body-text">People-pleasing is often dismissed as a harmless desire to make others happy. It is not.</p>
+ 
+    <div class="belief-callout">
+      <div class="belief-callout-label"><i class="fas fa-triangle-exclamation"></i> The Real Definition</div>
+      <div class="belief-callout-text">It is a highly active, desperate trauma response known as the Fawn Response.</div>
+    </div>
+ 
+    <p class="body-text">When a child cannot fight an abusive or volatile parent, and when they cannot run away, their nervous system chooses to appease. They learn to monitor the facial expressions, tone of voice, and body language of the adult to ensure they stay safe.</p>
+    <p class="body-text">In adulthood, this looks like an inability to say no without an agonizing wave of anxiety. You find yourself adapting your personality to match whoever you are talking to. You over-apologize for things that aren't your fault, and you feel personally responsible for the happiness of everyone in the room.</p>
+  </div>
+  <div class="page-number">47</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.1 — PEOPLE-PLEASING (PART 2 - TOOL) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.1 · People-Pleasing</span>
+    <i class="fas fa-face-smile-beam page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">You are still trying to appease the unpredictable parent so the environment doesn't explode.</p>
+ 
+    <div class="tool-box">
+      <div class="tool-box-header">
+        <div class="tool-box-icon">🛠️</div>
+        <div class="tool-box-title">The Fawn-Response Interrupter</div>
+      </div>
+      <div class="tool-box-intro">To break the automatic loop of people-pleasing, you must build a buffer between the request and your response.</div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">1</div>
+        <div class="tool-box-step-text"><strong>The 24-Hour Rule</strong>Never agree to a non-emergency request on the spot. Implement a strict script: "Let me check my calendar/capacity and get back to you by tomorrow." This removes the face-to-face pressure that triggers your childhood survival response.</div>
+      </div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">2</div>
+        <div class="tool-box-step-text"><strong>Locate the Somatic Trigger</strong>When you feel the urge to appease, pay attention to your body. Is your throat closing up? Is your chest tight? Breathe into that space and remind your nervous system: "I am an adult. I am safe. Disappointment from others will not destroy me."</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">48</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.2 — HYPER-INDEPENDENCE (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.2 · Hyper-Independence</span>
+    <i class="fas fa-shield-virus page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.3.2</div>
+    <div class="subsection-title">Hyper-Independence</div>
+ 
+    <p class="body-text">Hyper-independence is the battle cry of the wounded Strong One. It sounds like:</p>
+ 
+    <div class="inner-voice">
+      <div class="inner-voice-label"><i class="fas fa-volume-high"></i> The Battle Cry</div>
+      <div class="inner-voice-line">I don't need anyone.</div>
+      <div class="inner-voice-line">I can do it myself.</div>
+      <div class="inner-voice-line">If you want it done right, do it yourself.</div>
+    </div>
+ 
+    <p class="body-text">While society praises self-reliance, extreme hyper-independence is actually a defensive wall built to protect a child who was deeply let down by their caregivers. It is a declaration that the world is unsafe and people are fundamentally unreliable.</p>
+    <p class="body-text">If you are hyper-independent, you view asking for help as a dangerous vulnerability. You would rather burn out, work eighty hours a week, or suffer through an illness alone than reach out to a friend or partner.</p>
+  </div>
+  <div class="page-number">49</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.2 — HYPER-INDEPENDENCE (PART 2 - TOOL) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.2 · Hyper-Independence</span>
+    <i class="fas fa-shield-virus page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">This keeps you trapped in a self-fulfilling prophecy: because you never ask for help, you never receive it, which validates your belief that you are completely on your own.</p>
+ 
+    <div class="tool-box">
+      <div class="tool-box-header">
+        <div class="tool-box-icon">🛠️</div>
+        <div class="tool-box-title">The Interdependence Protocol</div>
+      </div>
+      <div class="tool-box-intro">Healing from hyper-independence requires micro-doses of vulnerability. You must practice letting people in before you reach a state of crisis.</div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">1</div>
+        <div class="tool-box-step-text"><strong>Outsource the Low Stakes</strong>Identify one small task this week that you can hand off to someone else. Let a colleague handle a minor report, or ask your partner to take over a specific chore.</div>
+      </div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">2</div>
+        <div class="tool-box-step-text"><strong>The Direct Request</strong>Practice making a request without qualifying it or apologizing for it. Do not say, "Sorry to bother you, but could you maybe help if you have time?" Say, "I need help with X. Are you available to assist me with this?"</div>
+      </div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">3</div>
+        <div class="tool-box-step-text"><strong>Hold the Space</strong>When someone helps you, resist the urge to immediately repay the favor or take back control. Sit with the discomfort of being supported.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">50</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.3 — EMOTIONAL NUMBNESS (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.3 · Emotional Numbness</span>
+    <i class="fas fa-snowflake page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.3.3</div>
+    <div class="subsection-title">Emotional Numbness</div>
+ 
+    <p class="body-text">If you ask an adult scapegoat or strong one what they are feeling during a moment of high stress, they will often look at you blankly and say,</p>
+ 
+    <div class="inner-voice">
+      <div class="inner-voice-label"><i class="fas fa-comment-slash"></i> The Blank Response</div>
+      <div class="inner-voice-line">I don't know. I don't feel anything. I'm just functional.</div>
+    </div>
+ 
+    <p class="body-text">This is <strong>functional dissociation</strong>. When a child is trapped in an environment with constant emotional volatility or relentless criticism, their emotional bandwidth gets overloaded. To protect the core self from being completely destroyed, the brain turns down the volume on the entire emotional system.</p>
+  </div>
+  <div class="page-number">51</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.3 — EMOTIONAL NUMBNESS (PART 2 - FLOW) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.3 · Emotional Numbness</span>
+    <i class="fas fa-snowflake page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div style="font-size:11px; font-weight:800; letter-spacing:2.5px; color:var(--accent-deep); text-transform:uppercase; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
+      <i class="fas fa-diagram-project"></i> The Shutdown Sequence
+    </div>
+ 
+    <div class="flow-diagram">
+      <div class="flow-step dark">Chronic Emotional Overload</div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-step">Brain Pulls the Circuit Breaker</div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-step gold">Emotional Numbness / Dissociation</div>
+    </div>
+ 
+    <p class="body-text">You do not get to selectively numb your emotions. When you turn down the volume on your grief, your fear, and your anger, you also turn down the volume on your joy, your passion, and your capacity for deep intimacy.</p>
+ 
+    <div class="emphasis-strong">You walk through life behind a pane of thick glass — seeing everything, but feeling nothing.</div>
+  </div>
+  <div class="page-number">52</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.3 — EMOTIONAL NUMBNESS (PART 3 - TOOL) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.3 · Emotional Numbness</span>
+    <i class="fas fa-snowflake page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="tool-box">
+      <div class="tool-box-header">
+        <div class="tool-box-icon">🛠️</div>
+        <div class="tool-box-title">The Emotional Resuscitation Framework</div>
+      </div>
+      <div class="tool-box-intro">To wake up a numbed nervous system, you have to bypass the analytical mind and go directly to the body.</div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">1</div>
+        <div class="tool-box-step-text"><strong>The Body Scan</strong>Three times a day, stop and drop your awareness into your physical frame. Don't look for complex emotions; look for raw physical data. Is your jaw clenched? Are your shoulders up by your ears? Is your stomach fluttering?</div>
+      </div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">2</div>
+        <div class="tool-box-step-text"><strong>Label the Sensation</strong>Assign physical qualities to what you feel. Is it heavy, sharp, cold, tight, or hollow?</div>
+      </div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">3</div>
+        <div class="tool-box-step-text"><strong>The Expression Release</strong>If you detect a pocket of tension, allow it to move. Shake out your hands, take three deep diaphragmatic breaths, or let out a physical sigh. You are teaching your brain that it is finally safe to feel what is happening inside your skin.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">53</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.4 — GUILTY FOR HAVING NEEDS (PART 1) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.4 · Feeling Guilty for Having Needs</span>
+    <i class="fas fa-hand-holding-heart page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="subsection-num">2.3.4</div>
+    <div class="subsection-title">Feeling Guilty for Having Needs</div>
+ 
+    <p class="body-text">For both the scapegoat and the strong one, having a basic human need — whether it is a need for rest, a need for affection, a need for space, or a need to change your mind — feels like an act of profound selfishness.</p>
+    <p class="body-text">In your childhood ecosystem, your needs were an inconvenience to the system.</p>
+ 
+    <div class="comparison-stack">
+      <div class="comparison-row surface">
+        <div class="comparison-row-label">The Scapegoat</div>
+        <div class="comparison-row-text">The scapegoat's needs were ignored in favor of punishing them.</div>
+      </div>
+      <div class="comparison-row deeper">
+        <div class="comparison-row-label">The Strong One</div>
+        <div class="comparison-row-text">The strong one's needs were ignored because they were supposed to be the source of strength, not a consumer of it.</div>
+      </div>
+    </div>
+ 
+    <p class="body-text">When you express a need as an adult, a massive wave of evolutionary guilt hits your system. Your brain interprets a personal need as a threat to your belonging.</p>
+  </div>
+  <div class="page-number">54</div>
+</div>
+ 
+ 
+<!-- ==================== 2.3.4 — GUILTY FOR HAVING NEEDS (PART 2 - TOOL) ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">2.3.4 · Feeling Guilty for Having Needs</span>
+    <i class="fas fa-hand-holding-heart page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">You feel like you are taking up too much space, being a burden, or asking for the impossible.</p>
+ 
+    <div class="tool-box">
+      <div class="tool-box-header">
+        <div class="tool-box-icon">🛠️</div>
+        <div class="tool-box-title">The Needs Reclaiming Practice</div>
+      </div>
+      <div class="tool-box-intro">You cannot wait for the guilt to vanish before you start expressing your needs. You must act in the presence of the guilt until it loses its power.</div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">1</div>
+        <div class="tool-box-step-text"><strong>The Daily Needs Inquiry</strong>Every morning before you look at your phone, ask yourself this single question: <em>What do I need today to feel supported, and how can I provide that for myself or ask for it?</em></div>
+      </div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">2</div>
+        <div class="tool-box-step-text"><strong>The Unapologetic Statement</strong>Practice stating your needs as facts rather than negotiations. Instead of saying, "Is it okay if I take a break now?" say, "I am going to take a twenty-minute walk to clear my head."</div>
+      </div>
+      <div class="tool-box-step">
+        <div class="tool-box-step-num">3</div>
+        <div class="tool-box-step-text"><strong>Tolerate the Internal Echo</strong>When the guilt bubbles up after you state a need, do not backtrack or over-explain. Sit still. Let the guilt pass through you like a wave. Each time you survive the guilt without abandoning your need, you rewrite the ancient script that kept you small.</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">55</div>
+</div>
+ 
+ 
+<!-- ==================== CHAPTER 2 — CLOSING ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 2 · Closing Reflection</span>
+    <i class="fas fa-key page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <p class="body-text">The damage inflicted by these childhood roles is deep, quiet, and incredibly pervasive. It shapes the way you love, the way you work, and the way you view your worth.</p>
+ 
+    <div class="emphasis-strong">But this damage is not your destiny.</div>
+ 
+    <p class="body-text">It is simply the historical record of how hard you fought to stay alive in an environment that could not see you.</p>
+    <p class="body-text">The very fact that you are reading these words means that the script is beginning to lose its grip. You are no longer that helpless child trapped in that rigid system.</p>
+ 
+    <div class="closing-highlight">
+      <div class="closing-highlight-label"><i class="fas fa-key"></i> &nbsp; The Truth You Must Hold</div>
+      <div class="closing-highlight-text">The armor that saved your life is now the cage that holds you back — and you hold the key to the lock.</div>
+    </div>
+ 
+    <div class="chapter-end-mark">✦ ✦ ✦</div>
+  </div>
+  <div class="page-number">56</div>
+</div>
+ 
+ 
+<!-- =====================================================
+     CHAPTER PAGES WILL BE ADDED HERE AS YOU PASTE CONTENT
+     ===================================================== -->
+ 
+ 
 <script>
   // Smooth scroll for all internal anchor links (TOC jump links)
   document.querySelectorAll('a[href^="#"]').forEach(link => {
