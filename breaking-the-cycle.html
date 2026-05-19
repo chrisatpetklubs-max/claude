@@ -33,7 +33,6 @@
     padding: 20px 10px;
     gap: 0;
   }
-</style>
 
   /* PAGE BASE */
   .page {
@@ -437,6 +436,141 @@
   .audience-card-text { font-size: 15px; line-height: 1.7; color: #1a1a1a; }
   .audience-card-text strong { display: block; font-size: 14px; margin-bottom: 3px; }
 
+  /* ===== PART DIVIDER PAGE ===== */
+  .part-divider {
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 28px;
+    min-height: var(--page-height);
+    position: relative;
+  }
+  .part-divider::before,
+  .part-divider::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--accent);
+  }
+  .part-divider::before { top: 0; }
+  .part-divider::after { bottom: 0; }
+  .part-eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .part-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 4px;
+    opacity: 0.9;
+  }
+  .part-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    margin-bottom: 4px;
+  }
+  .part-line {
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    margin: 18px 0 18px;
+  }
+  .part-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: #c8c8c8;
+    line-height: 1.75;
+    max-width: 280px;
+    margin-bottom: 32px;
+  }
+  .part-quote {
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    background: rgba(200,169,110,0.1);
+    border-radius: 0 6px 6px 0;
+    max-width: 320px;
+  }
+  .part-quote-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--accent-light);
+    line-height: 1.7;
+  }
+
+  /* ===== CHAPTER META BADGE ===== */
+  .chapter-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .chapter-number-badge {
+    background: var(--black);
+    color: var(--accent);
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 16px;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .chapter-meta-text {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* ===== ROLE CARD ===== */
+  .role-card {
+    background: var(--cream);
+    border-radius: 10px;
+    padding: 16px 14px;
+    border-top: 3px solid var(--accent);
+  }
+  .role-card-icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: var(--accent);
+  }
+  .role-card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 2px;
+  }
+  .role-card-tag {
+    font-size: 9.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .role-card-text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #3a3a3a;
+  }
+
 </style>
 
 </head>
@@ -523,9 +657,50 @@
       <div class="toc-item-page">6</div>
     </a>
 
-    <div style="margin-top:24px; padding:16px; background:var(--black); border-radius:10px; text-align:center;">
-      <div style="font-size:11px; color:var(--accent); letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;">More Chapters Coming</div>
-      <div style="font-size:13px; color:#c0c0c0; line-height:1.6;">Full chapter list will be updated as content is added to this edition.</div>
+    <div style="margin: 26px 0 10px; padding-left: 4px;">
+      <div style="font-size:10px; letter-spacing:3px; color:var(--accent); text-transform:uppercase; font-weight:700;">Part One · Awareness</div>
+      <div style="height:2px; background:var(--accent); width:40px; margin-top:6px;"></div>
+    </div>
+
+    <a class="toc-item" href="#part-one">
+      <div class="toc-item-icon"><i class="fas fa-eye"></i></div>
+      <div class="toc-item-text">
+        <div class="toc-item-name">Part One: Awareness</div>
+        <div class="toc-item-desc">Seeing what you've been living</div>
+      </div>
+      <div class="toc-item-page">7</div>
+    </a>
+
+    <a class="toc-item" href="#chapter-one">
+      <div class="toc-item-icon"><i class="fas fa-magnifying-glass"></i></div>
+      <div class="toc-item-text">
+        <div class="toc-item-name">Chapter 1: Recognizing the Patterns</div>
+        <div class="toc-item-desc">How invisible patterns shape your life</div>
+      </div>
+      <div class="toc-item-page">8</div>
+    </a>
+
+    <a class="toc-item" href="#chapter-one-roles">
+      <div class="toc-item-icon"><i class="fas fa-masks-theater"></i></div>
+      <div class="toc-item-text">
+        <div class="toc-item-name">The Roles We Played</div>
+        <div class="toc-item-desc">The costume you didn't choose</div>
+      </div>
+      <div class="toc-item-page">9</div>
+    </a>
+
+    <a class="toc-item" href="#chapter-one-reflection">
+      <div class="toc-item-icon"><i class="fas fa-feather-pointed"></i></div>
+      <div class="toc-item-text">
+        <div class="toc-item-name">Your First Reflection</div>
+        <div class="toc-item-desc">Journal exercise · 20 minutes</div>
+      </div>
+      <div class="toc-item-page">10</div>
+    </a>
+
+    <div style="margin-top:22px; padding:14px 16px; background:var(--cream); border-left:4px solid var(--accent); border-radius:0 8px 8px 0;">
+      <div style="font-size:10px; letter-spacing:2px; color:var(--accent); text-transform:uppercase; margin-bottom:4px; font-weight:700;">Coming Next</div>
+      <div style="font-size:12px; color:#3a3a3a; line-height:1.55;">Part Two: Understanding · Family Systems · Emotional Healing · Identity Reclamation · Breaking the Cycle Forward</div>
     </div>
   </div>
   <div class="page-number">2</div>
@@ -727,6 +902,173 @@
     </div>
   </div>
   <div class="page-number">6</div>
+</div>
+
+
+<!-- ==================== PART ONE — AWARENESS ==================== -->
+<div class="page part-divider" id="part-one">
+  <div class="part-eyebrow">Part One</div>
+  <div class="part-number">01</div>
+  <div class="part-title">Awareness</div>
+  <div class="part-line"></div>
+  <div class="part-subtitle">Before anything can change, it must first be seen. This is where the work begins — with the courage to look honestly at what you've been carrying.</div>
+  <div class="part-quote">
+    <div class="part-quote-text">"You cannot heal a wound you refuse to acknowledge. You cannot rewrite a story you've never read. Awareness is the door — every other door is on the other side of it."</div>
+  </div>
+</div>
+
+
+<!-- ==================== CHAPTER 1 — RECOGNIZING THE PATTERNS ==================== -->
+<div class="page" id="chapter-one">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 1 · Recognizing the Patterns</span>
+    <i class="fas fa-magnifying-glass page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="chapter-meta">
+      <div class="chapter-number-badge">1</div>
+      <div class="chapter-meta-text">Chapter One</div>
+    </div>
+    <div class="section-title">Recognizing the Patterns</div>
+    <div class="section-divider"></div>
+
+    <p class="body-text">Most of what runs your life right now isn't being chosen — it's being repeated. Reactions you've had a thousand times. Beliefs that feel like facts. Habits so familiar you've stopped noticing them at all.</p>
+
+    <p class="body-text">These are patterns. And they don't ask for permission. They simply show up, again and again, until you decide to see them.</p>
+
+    <div class="highlight-box">
+      <div class="highlight-box-title"><i class="fas fa-eye"></i> The First Step Is Seeing</div>
+      <p>You cannot change what you cannot see. And you cannot see what you've spent a lifetime calling "just who I am." The first act of healing is the willingness to question that sentence.</p>
+    </div>
+
+    <p class="body-text">Every pattern has three layers. Until you understand all three, you'll only ever change the surface — and the surface always grows back.</p>
+
+    <ul class="icon-list">
+      <li>
+        <div class="li-icon"><i class="fas fa-hand"></i></div>
+        <div><strong style="color:var(--black);">The Behavior</strong> — what you do. The reaction, the habit, the choice you keep making even when you swore you wouldn't.</div>
+      </li>
+      <li>
+        <div class="li-icon"><i class="fas fa-brain"></i></div>
+        <div><strong style="color:var(--black);">The Belief</strong> — what you tell yourself about why. The story underneath the behavior that makes it feel necessary.</div>
+      </li>
+      <li>
+        <div class="li-icon"><i class="fas fa-seedling"></i></div>
+        <div><strong style="color:var(--black);">The Origin</strong> — where it actually came from. The moment, the relationship, the survival strategy that first made this make sense.</div>
+      </li>
+    </ul>
+
+    <div class="quote-block">
+      <div class="quote-text">"Naming the pattern is half the freedom. Once you can see it, it can no longer run you in the dark."</div>
+      <div class="quote-source">— Jason Chris</div>
+    </div>
+  </div>
+  <div class="page-number">8</div>
+</div>
+
+
+<!-- ==================== CHAPTER 1 — THE ROLES WE PLAYED ==================== -->
+<div class="page" id="chapter-one-roles">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 1 · The Roles We Played</span>
+    <i class="fas fa-masks-theater page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Chapter One · Continued</div>
+    <div class="section-title">The Roles We Played</div>
+    <div class="section-divider"></div>
+
+    <p class="body-text">In every family, children are quietly handed a job. Not a job they applied for — a job the system needed someone to fill. You took yours seriously. You may still be doing it today.</p>
+
+    <p class="body-text">See if you recognize yourself in any of these. Most of us played more than one. Some of us are still playing them now, just with different audiences.</p>
+
+    <div class="card-grid">
+      <div class="role-card">
+        <div class="role-card-icon"><i class="fas fa-trophy"></i></div>
+        <div class="role-card-name">The Hero</div>
+        <div class="role-card-tag">The Achiever</div>
+        <div class="role-card-text">You earned love through performance. Grades, awards, success — all proof that you mattered. Rest still feels dangerous.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-card-icon"><i class="fas fa-hands-holding-heart"></i></div>
+        <div class="role-card-name">The Caretaker</div>
+        <div class="role-card-tag">The Peacemaker</div>
+        <div class="role-card-text">You became responsible for everyone's emotions but your own. Peace was your job — and conflict somehow always felt like your fault.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-card-icon"><i class="fas fa-ghost"></i></div>
+        <div class="role-card-name">The Invisible One</div>
+        <div class="role-card-tag">The Lost Child</div>
+        <div class="role-card-text">You learned to take up no space. To need nothing. To disappear quietly so the chaos around you wouldn't get worse.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-card-icon"><i class="fas fa-fire"></i></div>
+        <div class="role-card-name">The Rebel</div>
+        <div class="role-card-tag">The Scapegoat</div>
+        <div class="role-card-text">You carried the family's anger so they didn't have to. Being "the difficult one" was the only place you got seen at all.</div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <div class="highlight-box-title"><i class="fas fa-mask"></i> The Costume You Didn't Choose</div>
+      <p>Your role isn't your identity. It's the costume you were handed before you knew you had a self to dress. You can take it off. You just have to first remember it isn't your skin.</p>
+    </div>
+  </div>
+  <div class="page-number">9</div>
+</div>
+
+
+<!-- ==================== CHAPTER 1 — YOUR FIRST REFLECTION ==================== -->
+<div class="page" id="chapter-one-reflection">
+  <div class="page-header">
+    <span class="page-header-title">Chapter 1 · Your First Reflection</span>
+    <i class="fas fa-feather-pointed page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Reflection · 20 Minutes</div>
+    <div class="section-title">Your First Reflection</div>
+    <div class="section-divider"></div>
+
+    <p class="body-text">This is where the book becomes yours. Find a quiet space. Open a journal. Take twenty minutes. Don't edit yourself — nobody is reading this but you.</p>
+
+    <div class="step-row">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <div class="step-title">Name the role</div>
+        <div class="step-text">Looking back at the previous page, which role (or roles) did you play growing up? Write it down. Don't justify it. Just name it.</div>
+      </div>
+    </div>
+
+    <div class="step-row">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <div class="step-title">Write the cost</div>
+        <div class="step-text">What did playing that role cost you? What parts of yourself did you have to hide, shrink, or silence to keep doing it?</div>
+      </div>
+    </div>
+
+    <div class="step-row">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <div class="step-title">Find the pattern today</div>
+        <div class="step-text">Where in your adult life are you still playing this role? At work? In relationships? With your family? Be specific.</div>
+      </div>
+    </div>
+
+    <div class="step-row">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <div class="step-title">Write a sentence to that younger you</div>
+        <div class="step-text">The child who first took on this role didn't have a choice. Write one sentence to them — not to fix them, just to acknowledge them.</div>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <div class="quote-text">"You don't have to be done with the pattern today. You only have to be honest about it. Honesty is the first crack in the armor."</div>
+      <div class="quote-source">— Jason Chris</div>
+    </div>
+  </div>
+  <div class="page-number">10</div>
 </div>
 
 
