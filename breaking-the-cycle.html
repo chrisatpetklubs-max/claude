@@ -125,6 +125,379 @@
   }
 
   /* ============================================================
+     TABLE OF CONTENTS
+     ============================================================ */
+  .toc-body { padding: 26px 22px 50px; }
+  .toc-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--black);
+    margin-bottom: 4px;
+    line-height: 1.1;
+  }
+  .toc-tagline {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 22px;
+    line-height: 1.5;
+  }
+  .toc-group-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--accent-deep);
+    text-transform: uppercase;
+    margin: 18px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .toc-group-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* Front-matter rows */
+  .toc-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    background: var(--cream);
+    border-left: 3px solid var(--accent);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .toc-row:hover { background: var(--accent-light); transform: translateX(3px); }
+  .toc-row-icon {
+    width: 30px; height: 30px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .toc-row-name {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+  }
+  .toc-row-page {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-deep);
+    background: rgba(200,169,110,0.18);
+    padding: 3px 8px;
+    border-radius: 12px;
+    min-width: 32px;
+    text-align: center;
+  }
+
+  /* Chapter blocks */
+  .toc-chapter { margin-bottom: 14px; }
+  .toc-chapter-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    background: var(--black);
+    border-radius: 8px 8px 0 0;
+    text-decoration: none;
+    border-left: 3px solid var(--accent);
+  }
+  .toc-chapter-main:hover { background: #1a1a1a; }
+  .toc-chapter-badge {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    background: rgba(200,169,110,0.12);
+    border: 1px solid var(--accent);
+    padding: 3px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .toc-chapter-title {
+    flex: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.25;
+  }
+  .toc-chapter-page {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .toc-subs {
+    background: var(--cream);
+    border-radius: 0 0 8px 8px;
+    padding: 6px 10px 8px;
+    border-left: 3px solid var(--accent-light);
+  }
+  .toc-sub {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    text-decoration: none;
+    font-size: 11.5px;
+    color: var(--soft-black);
+    line-height: 1.45;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .toc-sub:hover { background: rgba(200,169,110,0.15); }
+  .toc-sub-num {
+    font-weight: 800;
+    color: var(--accent-deep);
+    min-width: 26px;
+    font-size: 10px;
+  }
+  .toc-sub-name { flex: 1; }
+
+  /* ============================================================
+     ARCHETYPE ROW (About This Book)
+     ============================================================ */
+  .archetype-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 18px;
+    background: var(--cream);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid var(--accent);
+  }
+  .archetype-row .icon-circle {
+    width: 38px; height: 38px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .archetype-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--black);
+  }
+
+  /* ============================================================
+     EMPHASIS LINES (e.g., "Not through... / But through...")
+     ============================================================ */
+  .emphasis-stack { margin: 14px 0; }
+  .emphasis-line {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    line-height: 1.55;
+    padding: 8px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 6px;
+  }
+  .emphasis-line.neg {
+    color: var(--warm-red);
+    background: var(--warm-red-light);
+    border-left: 3px solid var(--warm-red);
+    font-style: italic;
+  }
+  .emphasis-line.pos {
+    color: #1f3d2c;
+    background: var(--healing-light);
+    border-left: 3px solid var(--healing);
+    font-weight: 600;
+  }
+
+  /* ============================================================
+     CONTRAST PAIR (What You'll Find: "Not / It is")
+     ============================================================ */
+  .contrast-row {
+    padding: 13px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .contrast-row.no { background: var(--warm-red-light); border-left: 4px solid var(--warm-red); }
+  .contrast-row.yes { background: var(--healing-light); border-left: 4px solid var(--healing); }
+  .contrast-row-icon { font-size: 22px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+  .contrast-row-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--soft-black);
+  }
+  .contrast-row-text strong {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: inherit;
+    font-weight: 800;
+  }
+  .contrast-row.no .contrast-row-text strong { color: var(--warm-red); }
+  .contrast-row.yes .contrast-row-text strong { color: var(--healing); }
+
+  /* ============================================================
+     VALUE ROW (Inside, you'll find...)
+     ============================================================ */
+  .value-list { margin: 14px 0; }
+  .value-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--cream);
+    border-radius: 8px;
+    margin-bottom: 7px;
+    border-left: 3px solid var(--accent);
+  }
+  .value-row-icon {
+    width: 34px; height: 34px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .value-row-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--soft-black);
+  }
+
+  /* ============================================================
+     DISCLAIMER NOTE
+     ============================================================ */
+  .disclaimer-note {
+    background: #fff8e8;
+    border: 1px solid #d4b06a;
+    border-left: 4px solid #b8862a;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .disclaimer-note-icon {
+    font-size: 18px;
+    color: #b8862a;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+  .disclaimer-note-text {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: #5a4318;
+  }
+
+  /* ============================================================
+     FEELING ROW (How to Use: "Some parts will feel...")
+     ============================================================ */
+  .feeling-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    border-left: 4px solid var(--accent);
+    background: var(--cream);
+  }
+  .feeling-row-emoji { font-size: 22px; flex-shrink: 0; }
+  .feeling-row-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--soft-black);
+  }
+
+  /* ============================================================
+     STEP ROW (numbered guidance)
+     ============================================================ */
+  .step-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 13px 16px;
+    background: var(--cream);
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .step-num {
+    width: 36px; height: 36px;
+    background: var(--black);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .step-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--soft-black);
+    padding-top: 6px;
+  }
+
+  /* ============================================================
+     CLOSING HIGHLIGHT (dark callout)
+     ============================================================ */
+  .closing-highlight {
+    background: var(--black);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-top: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .closing-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: var(--accent);
+  }
+  .closing-highlight-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .closing-highlight-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.65;
+    color: #f0e5cd;
+  }
+
+  /* ============================================================
      COVER PAGE
      ============================================================ */
   .cover {
@@ -400,13 +773,360 @@
 </div>
 
 
+<!-- ==================== TABLE OF CONTENTS — PART 1 ==================== -->
+<div class="page" id="toc">
+  <div class="page-header">
+    <span class="page-header-title">Breaking The Cycle</span>
+    <i class="fas fa-list page-header-icon"></i>
+  </div>
+  <div class="toc-body">
+    <div class="section-eyebrow">Navigation</div>
+    <div class="toc-section-title">Table of Contents</div>
+    <div class="toc-tagline">Tap any section to jump straight to it.</div>
+
+    <div class="toc-group-label"><i class="fas fa-bookmark" style="color:var(--accent-deep);font-size:10px;"></i> Front Matter</div>
+
+    <a class="toc-row" href="#about">
+      <div class="toc-row-icon"><i class="fas fa-book-open"></i></div>
+      <div class="toc-row-name">About This Book</div>
+      <div class="toc-row-page">4</div>
+    </a>
+    <a class="toc-row" href="#whats-inside">
+      <div class="toc-row-icon"><i class="fas fa-map"></i></div>
+      <div class="toc-row-name">Disclaimer / What You'll Find Here</div>
+      <div class="toc-row-page">5</div>
+    </a>
+    <a class="toc-row" href="#how-to-use">
+      <div class="toc-row-icon"><i class="fas fa-compass"></i></div>
+      <div class="toc-row-name">How to Use This Book</div>
+      <div class="toc-row-page">6</div>
+    </a>
+
+    <div class="toc-group-label"><i class="fas fa-layer-group" style="color:var(--accent-deep);font-size:10px;"></i> Chapters</div>
+
+    <!-- Chapter 1 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch1">
+        <div class="toc-chapter-badge">CH 01</div>
+        <div class="toc-chapter-title">The Role You Were Forced to Become</div>
+        <div class="toc-chapter-page">7</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch1-1"><span class="toc-sub-num">1.1</span><span class="toc-sub-name">Families Don't Just Raise Children — They Assign Roles</span></a>
+        <a class="toc-sub" href="#ch1-2"><span class="toc-sub-num">1.2</span><span class="toc-sub-name">Why You Adapted Instead of Resisted</span></a>
+        <a class="toc-sub" href="#ch1-3"><span class="toc-sub-num">1.3</span><span class="toc-sub-name">Signs You're Still Living Inside the Role</span></a>
+      </div>
+    </div>
+
+    <!-- Chapter 2 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch2">
+        <div class="toc-chapter-badge">CH 02</div>
+        <div class="toc-chapter-title">The Hidden Damage of Being the Scapegoat or "Strong One"</div>
+        <div class="toc-chapter-page">13</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch2-1"><span class="toc-sub-num">2.1</span><span class="toc-sub-name">What Scapegoating Actually Does to a Person</span></a>
+        <a class="toc-sub" href="#ch2-2"><span class="toc-sub-num">2.2</span><span class="toc-sub-name">Why the Strong Ones Secretly Break Inside</span></a>
+        <a class="toc-sub" href="#ch2-3"><span class="toc-sub-num">2.3</span><span class="toc-sub-name">The Adult Symptoms Nobody Connects Back to Family</span></a>
+      </div>
+    </div>
+
+    <!-- Chapter 3 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch3">
+        <div class="toc-chapter-badge">CH 03</div>
+        <div class="toc-chapter-title">Stop Performing. Start Being.</div>
+        <div class="toc-chapter-page">19</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch3-1"><span class="toc-sub-num">3.1</span><span class="toc-sub-name">The Exhaustion of Performing a Role</span></a>
+        <a class="toc-sub" href="#ch3-2"><span class="toc-sub-num">3.2</span><span class="toc-sub-name">Separating Your Real Self From the Role</span></a>
+        <a class="toc-sub" href="#ch3-3"><span class="toc-sub-num">3.3</span><span class="toc-sub-name">The Fear of Changing</span></a>
+      </div>
+    </div>
+
+    <!-- Chapter 4 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch4">
+        <div class="toc-chapter-badge">CH 04</div>
+        <div class="toc-chapter-title">Breaking the Pattern of Being the Strong One</div>
+        <div class="toc-chapter-page">25</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch4-1"><span class="toc-sub-num">4.1</span><span class="toc-sub-name">Why You Feel Responsible for Everyone</span></a>
+        <a class="toc-sub" href="#ch4-2"><span class="toc-sub-num">4.2</span><span class="toc-sub-name">Learning to Put the Weight Down</span></a>
+        <a class="toc-sub" href="#ch4-3"><span class="toc-sub-num">4.3</span><span class="toc-sub-name">Rebuilding a Healthy Identity</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">2</div>
+</div>
+
+
+<!-- ==================== TABLE OF CONTENTS — PART 2 ==================== -->
+<div class="page">
+  <div class="page-header">
+    <span class="page-header-title">Breaking The Cycle</span>
+    <i class="fas fa-list page-header-icon"></i>
+  </div>
+  <div class="toc-body">
+    <div class="section-eyebrow">Navigation (cont.)</div>
+    <div class="toc-section-title">Table of Contents</div>
+    <div class="toc-tagline">Continued — chapters five through eight.</div>
+
+    <div class="toc-group-label"><i class="fas fa-layer-group" style="color:var(--accent-deep);font-size:10px;"></i> Chapters (cont.)</div>
+
+    <!-- Chapter 5 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch5">
+        <div class="toc-chapter-badge">CH 05</div>
+        <div class="toc-chapter-title">Escaping the Scapegoat Identity</div>
+        <div class="toc-chapter-page">31</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch5-1"><span class="toc-sub-num">5.1</span><span class="toc-sub-name">Why Families Need a "Problem Person"</span></a>
+        <a class="toc-sub" href="#ch5-2"><span class="toc-sub-num">5.2</span><span class="toc-sub-name">Healing the Belief That You Are the Problem</span></a>
+        <a class="toc-sub" href="#ch5-3"><span class="toc-sub-num">5.3</span><span class="toc-sub-name">Ending the Cycle of Self-Sabotage</span></a>
+      </div>
+    </div>
+
+    <!-- Chapter 6 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch6">
+        <div class="toc-chapter-badge">CH 06</div>
+        <div class="toc-chapter-title">Your Needs Were Never the Problem</div>
+        <div class="toc-chapter-page">37</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch6-1"><span class="toc-sub-num">6.1</span><span class="toc-sub-name">Relearning Emotional Safety</span></a>
+        <a class="toc-sub" href="#ch6-2"><span class="toc-sub-num">6.2</span><span class="toc-sub-name">Boundaries Without Shame</span></a>
+        <a class="toc-sub" href="#ch6-3"><span class="toc-sub-num">6.3</span><span class="toc-sub-name">Reclaiming Emotional Space</span></a>
+      </div>
+    </div>
+
+    <!-- Chapter 7 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch7">
+        <div class="toc-chapter-badge">CH 07</div>
+        <div class="toc-chapter-title">Finding Who You Actually Are Under the Role</div>
+        <div class="toc-chapter-page">43</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch7-1"><span class="toc-sub-num">7.1</span><span class="toc-sub-name">Grieving the Person You Had to Become</span></a>
+        <a class="toc-sub" href="#ch7-2"><span class="toc-sub-num">7.2</span><span class="toc-sub-name">Reconnecting With Yourself</span></a>
+        <a class="toc-sub" href="#ch7-3"><span class="toc-sub-num">7.3</span><span class="toc-sub-name">Becoming Someone You No Longer Need to Escape</span></a>
+      </div>
+    </div>
+
+    <!-- Chapter 8 -->
+    <div class="toc-chapter">
+      <a class="toc-chapter-main" href="#ch8">
+        <div class="toc-chapter-badge">CH 08</div>
+        <div class="toc-chapter-title">Becoming Someone Your Old Role Can't Contain</div>
+        <div class="toc-chapter-page">49</div>
+      </a>
+      <div class="toc-subs">
+        <a class="toc-sub" href="#ch8-1"><span class="toc-sub-num">8.1</span><span class="toc-sub-name">Living Without Constant Performance</span></a>
+        <a class="toc-sub" href="#ch8-2"><span class="toc-sub-num">8.2</span><span class="toc-sub-name">Accepting That Some People Will Resist Your Change</span></a>
+        <a class="toc-sub" href="#ch8-3"><span class="toc-sub-num">8.3</span><span class="toc-sub-name">A New Relationship With Yourself</span></a>
+      </div>
+    </div>
+
+    <div style="margin-top:18px; padding:12px 14px; background:var(--black); border-radius:10px; text-align:center;">
+      <div style="font-size:10px; color:var(--accent); letter-spacing:2px; text-transform:uppercase; margin-bottom:4px;">A Note on Page Numbers</div>
+      <div style="font-size:12px; color:#c0c0c0; line-height:1.5;">Chapter page numbers are estimated and will be finalized once all chapter content is complete.</div>
+    </div>
+  </div>
+  <div class="page-number">3</div>
+</div>
+
+
+<!-- ==================== ABOUT THIS BOOK ==================== -->
+<div class="page" id="about">
+  <div class="page-header">
+    <span class="page-header-title">About This Book</span>
+    <i class="fas fa-book-open page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Front Matter</div>
+    <div class="section-title">About This Book <span style="font-family:'Inter';font-size:24px;">📖</span></div>
+    <div class="section-divider"></div>
+
+    <p class="body-text">This book is for the people who became who their family needed them to be before they ever had the chance to discover who they really were.</p>
+
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-shield-halved"></i></div>
+      <div class="archetype-name">The strong one.</div>
+    </div>
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-dove"></i></div>
+      <div class="archetype-name">The peacekeeper.</div>
+    </div>
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-bullseye"></i></div>
+      <div class="archetype-name">The scapegoat.</div>
+    </div>
+    <div class="archetype-row">
+      <div class="icon-circle"><i class="fas fa-ghost"></i></div>
+      <div class="archetype-name">The invisible child.</div>
+    </div>
+
+    <p class="body-text" style="margin-top:18px;">If you are exhausted from carrying roles that no longer fit you, this book will help you understand where those patterns came from — and how to finally break them without guilt.</p>
+
+    <div class="emphasis-stack">
+      <div class="emphasis-line neg">Not through empty motivation.</div>
+      <div class="emphasis-line neg">Not through blame.</div>
+      <div class="emphasis-line pos">But through real awareness, emotional healing, and practical change.</div>
+    </div>
+  </div>
+  <div class="page-number">4</div>
+</div>
+
+
+<!-- ==================== DISCLAIMER / WHAT YOU'LL FIND HERE ==================== -->
+<div class="page" id="whats-inside">
+  <div class="page-header">
+    <span class="page-header-title">What You'll Find Here</span>
+    <i class="fas fa-map page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Disclaimer</div>
+    <div class="section-title">What You'll Find Here</div>
+    <div class="section-divider"></div>
+
+    <div class="contrast-row no">
+      <div class="contrast-row-icon">✕</div>
+      <div class="contrast-row-text">
+        <strong>What this book is NOT</strong>
+        This is not a book about hating your family.
+      </div>
+    </div>
+    <div class="contrast-row yes">
+      <div class="contrast-row-icon">✓</div>
+      <div class="contrast-row-text">
+        <strong>What this book IS</strong>
+        It is a book about understanding the emotional patterns that shaped you so you can stop abandoning yourself to keep other people comfortable.
+      </div>
+    </div>
+
+    <div style="font-size:13px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:22px 0 12px; display:flex; align-items:center; gap:8px;">
+      <i class="fas fa-circle-check" style="color:var(--accent);font-size:13px;"></i> Inside, you'll find:
+    </div>
+
+    <div class="value-list">
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-heart-pulse"></i></div>
+        <div class="value-row-text">practical emotional healing tools</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-brain"></i></div>
+        <div class="value-row-text">nervous system awareness</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-people-roof"></i></div>
+        <div class="value-row-text">family role patterns explained clearly</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-hand"></i></div>
+        <div class="value-row-text">ways to stop people-pleasing and over-functioning</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-user-check"></i></div>
+        <div class="value-row-text">guidance for reclaiming your identity</div>
+      </div>
+      <div class="value-row">
+        <div class="value-row-icon"><i class="fas fa-shield"></i></div>
+        <div class="value-row-text">healthy boundary work without emotional jargon</div>
+      </div>
+    </div>
+
+    <div class="disclaimer-note">
+      <div class="disclaimer-note-icon"><i class="fas fa-circle-info"></i></div>
+      <div class="disclaimer-note-text">
+        This book is educational and transformational in nature, but it is not a replacement for professional mental health care or therapy.
+      </div>
+    </div>
+  </div>
+  <div class="page-number">5</div>
+</div>
+
+
+<!-- ==================== HOW TO USE THIS BOOK ==================== -->
+<div class="page" id="how-to-use">
+  <div class="page-header">
+    <span class="page-header-title">How to Use This Book</span>
+    <i class="fas fa-compass page-header-icon"></i>
+  </div>
+  <div class="content-body">
+    <div class="section-eyebrow">Reader's Guide</div>
+    <div class="section-title">How to Use This Book <span style="font-family:'Inter';font-size:24px;">🗺️</span></div>
+    <div class="section-divider"></div>
+
+    <p class="body-text" style="font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:var(--black);font-weight:600;">Do not rush through this book just to finish it.</p>
+
+    <div style="font-size:11px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:14px 0 10px;">As you read, some parts will feel...</div>
+
+    <div class="feeling-row">
+      <div class="feeling-row-emoji">💚</div>
+      <div class="feeling-row-text">Some parts will feel validating.</div>
+    </div>
+    <div class="feeling-row">
+      <div class="feeling-row-emoji">😣</div>
+      <div class="feeling-row-text">Some parts may feel uncomfortable.</div>
+    </div>
+    <div class="feeling-row">
+      <div class="feeling-row-emoji">💡</div>
+      <div class="feeling-row-text">Others may explain emotions you have carried for years but never had language for.</div>
+    </div>
+
+    <div style="font-size:11px; font-weight:800; letter-spacing:2px; color:var(--accent-deep); text-transform:uppercase; margin:18px 0 10px;">How to move through it</div>
+
+    <div class="step-row">
+      <div class="step-num">1</div>
+      <div class="step-text">Take your time with the exercises and reflections.</div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">2</div>
+      <div class="step-text">Pause when something deeply resonates.</div>
+    </div>
+    <div class="step-row">
+      <div class="step-num">3</div>
+      <div class="step-text">Come back to sections more than once if needed.</div>
+    </div>
+
+    <div class="closing-highlight">
+      <div class="closing-highlight-label"><i class="fas fa-feather"></i> &nbsp; Remember</div>
+      <div class="closing-highlight-text">This is not about becoming a completely different person overnight. It is about slowly returning to the person you were before survival became your identity.</div>
+    </div>
+  </div>
+  <div class="page-number">6</div>
+</div>
+
+
 <!-- =====================================================
      CHAPTER PAGES WILL BE ADDED HERE AS YOU PASTE CONTENT
      ===================================================== -->
 
 
 <script>
-  // Future: page interactions will go here
+  // Smooth scroll for all internal anchor links (TOC jump links)
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+      if (href && href.length > 1) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Subtle highlight flash on landing
+          target.style.transition = 'box-shadow 0.6s ease';
+          target.style.boxShadow = '0 0 0 3px rgba(200,169,110,0.55), 0 6px 28px rgba(0,0,0,0.18)';
+          setTimeout(() => { target.style.boxShadow = ''; }, 1100);
+        }
+      }
+    });
+  });
 </script>
 </body>
 </html>
